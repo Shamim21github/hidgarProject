@@ -27,11 +27,11 @@
                             <h3>Our Services</h3>
                         </div>
                         <ul>
-                            <li><a href="service-single.html">Power & Energy Sectors</a></li>
-                            <li><a href="service-single.html">Architectures & Design</a></li>
-                            <li><a href="service-single.html">Explore Tiling & Painiting</a></li>
-                            <li><a href="service-single.html">Petroleum Production</a></li>
-                            <li><a href="service-single.html">chemical engineering</a></li>
+                            <li><a href="{{ route('services') }}">Power & Energy Sectors</a></li>
+                            <li><a href="{{ route('services') }}">Architectures & Design</a></li>
+                            <li><a href="{{ route('services') }}">Explore Tiling & Painiting</a></li>
+                            <li><a href="{{ route('services') }}">Petroleum Production</a></li>
+                            <li><a href="{{ route('services') }}">chemical engineering</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,11 +43,11 @@
                             <h3>Navigalion</h3>
                         </div>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">about us</a></li>
-                            <li><a href="service-single.html">service</a></li>
-                            <li><a href="blog.html">blog</a></li>
-                            <li><a href="contact.html">contact us</a></li>
+                            <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><a href="{{ route('about') }}">about us</a></li>
+                            <li><a href="{{ route('services') }}">service</a></li>
+                            <li><a href="{{ route('blog') }}">blog</a></li>
+                            <li><a href="{{ route('contact') }}">contact us</a></li>
                         </ul>
                     </div>
                 </div>
