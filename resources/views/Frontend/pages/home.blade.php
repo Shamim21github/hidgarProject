@@ -52,8 +52,8 @@
                             <div class="contact-intro">
                                 <ul>
                                     <li><i class="fi flaticon-email"></i>Hidgar</li>
-                                    <li><i class="fi flaticon-phone-call"></i> 01976388373</li>
-                                    <li><i class="fi ti-location-pin"></i> Dhaka, Bangladesh</li>
+                                    {{-- <li><i class="fi flaticon-phone-call"></i> 01976388373</li>
+                                    <li><i class="fi ti-location-pin"></i> Dhaka, Bangladesh</li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -749,9 +749,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col col-xs-12">
-                            <p class="copyright"> Copyright &copy; 2024 Shamim <a href="index.html"></a>.
+                            {{-- <p class="copyright"> Copyright &copy; 2024 Shamim <a href="index.html"></a>.
                                 All
-                                Rights Reserved.</p>
+                                Rights Reserved.
+                            </p> --}}
                         </div>
                     </div>
                 </div>

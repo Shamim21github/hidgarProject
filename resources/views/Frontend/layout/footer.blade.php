@@ -73,7 +73,8 @@
                 <div class="col col-xs-12">
                     <p class="copyright"> Copyright &copy; 2024 Shamim <a href="index.html"></a>.
                         All
-                        Rights Reserved.</p>
+                        Rights Reserved.
+                    </p>
                 </div>
             </div>
         </div>
