@@ -1,3 +1,4 @@
+
 <header id="header">
     <div class="topbar">
         <div class="container-fluid">
@@ -5,9 +6,10 @@
                 <div class="col col-lg-7 col-md-8 col-sm-12 col-12">
                     <div class="contact-intro">
                         <ul>
-                            <li><i class="fi flaticon-email"></i>Hidgar</li>
-                            <li><i class="fi flaticon-phone-call"></i> 01976388373</li>
-                            <li><i class="fi ti-location-pin"></i> Dhaka, Bangladesh</li>
+                            
+                            <li class="marquee-container"><span class="marquee-text">HIDGAR</span></li>
+                            {{-- <li><i class="fi flaticon-phone-call"></i> 01976388373</li>
+                            <li><i class="fi ti-location-pin"></i> Dhaka, Bangladesh</li> --}}
                         </ul>
                     </div>
                 </div>
@@ -75,19 +77,32 @@
                                         <li><a href="faq.html">FAQ</a></li>
                                     </ul>
                                 </li> --}}
+
+                                <li class="menu-item-has-children ">
+                                    <a href="{{ route('products') }}">Products</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{{ route('products') }}">Laser Cutting Sheet Metal Equipment </a></li>
+                                        <li><a href="{{ route('products') }}"> Combination sheet and tube laser cutting Equipment
+                                        </a></li>
+                                        <li><a href="{{ route('products') }}">Laser Welding Equipment </a></li>
+                                        <li><a href="{{ route('products') }}">Metal Bending Equipment </a></li>
+                                        <li><a href="{{ route('products') }}">Pipe Bending Equipment </a></li>
+                                        <li><a href="{{ route('products') }}">Laser Cleaning Equipment </a></li>
+                                    </ul>
+                                </li>
                                 <li class="menu-item-has-children">
                                     <a href="{{ route('services') }}">Service</a>            
                                 </li>
-                                <li class="menu-item-has-children">
+                                {{-- <li class="menu-item-has-children">
                                     <a href="{{ route('projects') }}">Project</a>                                
-                                </li>
-                                <li class="menu-item-has-children">
+                                </li> --}}
+                                {{-- <li class="menu-item-has-children">
                                     <a href="{{ route('team') }}">Team</a>  
-                                </li>
+                                </li> --}}
                                 
-                                <li class="menu-item-has-children">
+                                {{-- <li class="menu-item-has-children">
                                     <a href="{{ route('blog') }}">Blog</a>
-                                    {{-- <ul class="sub-menu">
+                                    <ul class="sub-menu">
                                         <li><a href="blog.html">Blog right sidebar</a></li>
                                         <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
                                         <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
@@ -102,8 +117,8 @@
                                                         fullwidth</a></li>
                                             </ul>
                                         </li>
-                                    </ul> --}}
-                                </li>
+                                    </ul>
+                                </li> --}}
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
 

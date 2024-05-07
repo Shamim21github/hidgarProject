@@ -18,7 +18,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <div data-swiper-parallax="500" class="slide-btns">
-                                <a href="about.html" class="theme-btn">About Us</a>
+                                <a href="{{ route('about') }}" class="theme-btn">About Us</a>
                             </div>
                         </div>
                     </div>

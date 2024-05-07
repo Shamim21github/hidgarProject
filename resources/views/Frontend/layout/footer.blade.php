@@ -5,8 +5,7 @@
                 <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                     <div class="widget about-widget">
                         <div class="logo widget-title">
-                            <img src="{{ asset('Frontend/assets/images/logo/HIDGAR_LOGO__.png') }}"
-                                alt="blog">
+                            <img src="{{ asset('Frontend/assets/images/logo/HIDGAR_LOGO__.png') }}" alt="blog">
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iure blanditiis
                             labore tempora inventore laborum error molestias,</p>
@@ -44,10 +43,11 @@
                         </div>
                         <ul>
                             <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="{{ route('about') }}">about us</a></li>
-                            <li><a href="{{ route('services') }}">service</a></li>
-                            <li><a href="{{ route('blog') }}">blog</a></li>
-                            <li><a href="{{ route('contact') }}">contact us</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
+                            <li><a href="{{ route('services') }}">Products</a></li>
+                            <li><a href="{{ route('services') }}">Service</a></li>
+                            {{-- <li><a href="blog.html">blog</a></li> --}}
+                            <li><a href="{{ route('contact') }}">Contact us</a></li>
                         </ul>
                     </div>
                 </div>

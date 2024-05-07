@@ -51,7 +51,7 @@
                         <div class="col col-lg-7 col-md-8 col-sm-12 col-12">
                             <div class="contact-intro">
                                 <ul>
-                                    <li><i class="fi flaticon-email"></i>Hidgar</li>
+                                    <li class="marquee-container"><span class="marquee-text">HIDGAR</span></li>
                                     {{-- <li><i class="fi flaticon-phone-call"></i> 01976388373</li>
                                     <li><i class="fi ti-location-pin"></i> Dhaka, Bangladesh</li> --}}
                                 </ul>
@@ -101,9 +101,9 @@
                             <div class="col-lg-7 col-md-1 col-1">
                                 <div id="navbar" class="collapse navbar-collapse navigation-holder">
                                     <button class="menu-close"><i class="ti-close"></i></button>
-                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0 ">
                                         <li class="menu-item-has-children">
-                                            <a class="active" href="#">Home</a>                                           
+                                            <a class="" href="#">Home</a>                                           
                                         </li>
                                         <li><a href="{{ route('about') }}">About</a></li>
                                         {{-- <li class="menu-item-has-children">
@@ -120,20 +120,30 @@
                                                 <li><a href="faq.html">FAQ</a></li>
                                             </ul>
                                         </li> --}}
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item-has-children ">
+                                            <a href="{{ route('products') }}">Products</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{{ route('products') }}">Laser Cutting Sheet Metal Equipment </a></li>
+                                                <li><a href="{{ route('products') }}"> Combination sheet and tube laser cutting Equipment
+                                                </a></li>
+                                                <li><a href="{{ route('products') }}">Laser Welding Equipment </a></li>
+                                                <li><a href="{{ route('products') }}">Metal Bending Equipment </a></li>
+                                                <li><a href="{{ route('products') }}">Pipe Bending Equipment </a></li>
+                                                <li><a href="{{ route('products') }}">Laser Cleaning Equipment </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children ">
                                             <a href="{{ route('services') }}">Service</a>
                                         </li>
-                                        <li class="menu-item-has-children">
+                                        {{-- <li class="menu-item-has-children">
                                             <a href="{{ route('projects') }}">Project</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
+                                        </li> --}}
+                                        {{-- <li class="menu-item-has-children">
                                             <a href="{{ route('team') }}">Team</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
+                                        </li> --}}
+                                        {{-- <li class="menu-item-has-children">
                                             <a href="{{ route('blog') }}">Blog</a>
-                                           
-
-                                            {{-- <ul class="sub-menu">
+                                            <ul class="sub-menu">
                                                 <li><a href="blog.html">Blog right sidebar</a></li>
                                                 <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
                                                 <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
@@ -148,8 +158,8 @@
                                                                 fullwidth</a></li>
                                                     </ul>
                                                 </li>
-                                            </ul> --}}
-                                        </li>
+                                            </ul>
+                                        </li> --}}
                                         <li><a href="{{ route('contact') }}">Contact</a></li>
                                     </ul>
 
@@ -721,11 +731,12 @@
                                     <h3>Navigalion</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="{{ route('about') }}">about us</a></li>
-                                    <li><a href="{{ route('services') }}">service</a></li>
-                                    <li><a href="blog.html">blog</a></li>
-                                    <li><a href="{{ route('contact') }}">contact us</a></li>
+                                    <li><a href="{{ route('home') }}">Home</a></li>
+                                    <li><a href="{{ route('about') }}">About Us</a></li>
+                                    <li><a href="{{ route('services') }}">Products</a></li>
+                                    <li><a href="{{ route('services') }}">Service</a></li>
+                                    {{-- <li><a href="blog.html">blog</a></li> --}}
+                                    <li><a href="{{ route('contact') }}">Contact us</a></li>
                                 </ul>
                             </div>
                         </div>

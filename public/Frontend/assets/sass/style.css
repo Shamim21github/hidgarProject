@@ -57,6 +57,28 @@ img {
   max-width: 100%;
 }
 
+.marquee-container {
+  
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-animation 5s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .sr-only {
   display: none !important;
   opacity: 0;
@@ -2073,7 +2095,7 @@ img {
 }
 @media screen and (min-width: 992px) and (max-width: 1870px) {
   .wpo-site-header #navbar > ul > li > a {
-    padding: 35px 18px;
+    padding: 35px  28px;
   }
 }
 @media screen and (min-width: 992px) {
