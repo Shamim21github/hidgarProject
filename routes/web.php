@@ -19,6 +19,35 @@ Route::get('/products', function () {
     return view('Frontend.pages.products');
 })->name('products');
 
+/* Product Details Route Start */
+Route::get('/products-details01', function () {
+    return view('Frontend.pages.product-details1');
+})->name('products1');
+
+Route::get('/products-details02', function () {
+    return view('Frontend.pages.product-details2');
+})->name('products2');
+
+Route::get('/products-details03', function () {
+    return view('Frontend.pages.product-details3');
+})->name('products3');
+
+Route::get('/products-details04', function () {
+    return view('Frontend.pages.product-details4');
+})->name('products4');
+
+Route::get('/products-details05', function () {
+    return view('Frontend.pages.product-details5');
+})->name('products5');
+
+Route::get('/products-details06', function () {
+    return view('Frontend.pages.product-details6');
+})->name('products6');
+/* Product Details Route end */
+
+
+
+
 Route::get('/services', function () {
     return view('Frontend.pages.services');
 })->name('services');

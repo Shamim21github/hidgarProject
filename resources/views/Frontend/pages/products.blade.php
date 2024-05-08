@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <!-- end of wpo-breadcumb-section-->s
+    <!-- end of wpo-breadcumb-section-->
 
     <!-- wpo-Products-single-area start -->
     <div class="wpo-Products-single-area section-padding">

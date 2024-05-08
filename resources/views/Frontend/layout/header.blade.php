@@ -81,13 +81,13 @@
                                 <li class="menu-item-has-children ">
                                     <a href="{{ route('products') }}">Products</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('products') }}">Laser Cutting Sheet Metal Equipment </a></li>
-                                        <li><a href="{{ route('products') }}"> Combination sheet and tube laser cutting Equipment
+                                        <li><a href="{{ route('products1') }}">Laser Cutting Sheet Metal Equipment </a></li>
+                                        <li><a href="{{ route('products2') }}"> Combination sheet and tube laser cutting Equipment
                                         </a></li>
-                                        <li><a href="{{ route('products') }}">Laser Welding Equipment </a></li>
-                                        <li><a href="{{ route('products') }}">Metal Bending Equipment </a></li>
-                                        <li><a href="{{ route('products') }}">Pipe Bending Equipment </a></li>
-                                        <li><a href="{{ route('products') }}">Laser Cleaning Equipment </a></li>
+                                        <li><a href="{{ route('products3') }}">Laser Welding Equipment </a></li>
+                                        <li><a href="{{ route('products4') }}">Metal Bending Equipment </a></li>
+                                        <li><a href="{{ route('products5') }}">Pipe Bending Equipment </a></li>
+                                        <li><a href="{{ route('products6') }}">Laser Cleaning Equipment </a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
