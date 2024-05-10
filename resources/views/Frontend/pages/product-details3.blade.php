@@ -82,12 +82,12 @@
       <h1 class="product-title" style="text-align: center; font-size:60px;">Laser Welding Equipment</h1> <br> <br>
         <div class="container">
             <div class="product-images">
-                <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" alt="Product Image 1">
+                <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" alt="Product Image 1">
                 {{-- <img src="image2.jpg" alt="Product Image 2">
               <img src="image3.jpg" alt="Product Image 3"> --}}
             </div>
             <div class="product-details"> <br> <br>
-                <h2 class="product-title">Heavy Fiber Laser Cutting Machine</h2>
+                <h2 class="product-title">Ultra-light Laser Welding Machine</h2>
                 <ul style="padding-left: 20px;">
                     <li>High demand, profitability.</li>
                     <li>Meeting market needs.</li>
@@ -105,16 +105,16 @@
 
         <div class="container">
           <div class="product-images">
-              <img src="{{ asset('Frontend/assets/images/laserCutting02.jpg') }}" alt="Product Image 1">
+              <img src="{{ asset('Frontend/assets/images/laserWelder02.jpg') }}" alt="Product Image 2">
               {{-- <img src="image2.jpg" alt="Product Image 2">
             <img src="image3.jpg" alt="Product Image 3"> --}}
           </div>
           <div class="product-details"> <br> <br>
               <h2 class="product-title">Exchange Platform Laser Cutting Machine Features</h2>
               <ul style="padding-left: 20px;">
-                  <li>High demand, profitability.</li>
-                  <li>Meeting market needs.</li>
-                  <li>Upgrading, staying competitive.</li>
+                  <li>Carbon steel: 3mm</li>
+                  <li> Stainless steel: 3mm</li>
+                  <li>UAluminum: 1mm</li>
                   <li>Scaling production capabilities.</li>
                   <li>Diversifying product offerings.</li>
                   <li> Selling older models.</li>
@@ -128,7 +128,7 @@
 
       <div class="container">
         <div class="product-images">
-            <img src="{{ asset('Frontend/assets/images/laserCutting03.jpg') }}" alt="Product Image 1">
+            <img src="{{ asset('Frontend/assets/images/laserWelder03.jpg') }}" alt="Product Image 1">
             {{-- <img src="image2.jpg" alt="Product Image 2">
           <img src="image3.jpg" alt="Product Image 3"> --}}
         </div>

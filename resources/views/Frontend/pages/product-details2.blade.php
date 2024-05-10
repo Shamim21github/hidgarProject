@@ -101,12 +101,12 @@
 
         <div class="container">
           <div class="product-images">
-              <img src="{{ asset('Frontend/assets/images/laserCutting02.jpg') }}" alt="Product Image 1">
+              <img src="{{ asset('Frontend/assets/images/tubelaser03.jpg') }}" alt="Product Image 2">
               {{-- <img src="image2.jpg" alt="Product Image 2">
             <img src="image3.jpg" alt="Product Image 3"> --}}
           </div>
           <div class="product-details"> <br> <br>
-              <h2 class="product-title">Exchange Platform Laser Cutting Machine Features</h2>
+              <h2 class="product-title">Powerful Laser Cutting Machine Features</h2>
               <ul style="padding-left: 20px;">
                   <li>High demand, profitability.</li>
                   <li>Meeting market needs.</li>
@@ -118,18 +118,18 @@
                   <li> Meeting customer requirements.</li>
                   <li>Industry Trends: Adapting to market changes.</li>
               </ul>
-              <p> <b>Laser Power:</b> 1700W, 2300W</p>
+              <p> <b>Laser Power:</b> 2400W, 2800W</p>
           </div>
       </div>
 
       <div class="container">
         <div class="product-images">
-            <img src="{{ asset('Frontend/assets/images/laserCutting03.jpg') }}" alt="Product Image 1">
+            <img src="{{ asset('Frontend/assets/images/tubelaser02.jpg') }}" alt="Product Image 3">
             {{-- <img src="image2.jpg" alt="Product Image 2">
           <img src="image3.jpg" alt="Product Image 3"> --}}
         </div>
         <div class="product-details"> <br> <br>
-            <h2 class="product-title">Extreme Power Fiber Laser Cutting Machine</h2>
+            <h2 class="product-title">Smart  Laser Cutting Machine</h2>
             <ul style="padding-left: 20px;">
                 <li>High demand, profitability.</li>
                 <li>Meeting market needs.</li>
