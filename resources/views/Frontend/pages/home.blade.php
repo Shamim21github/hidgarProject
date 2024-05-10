@@ -242,17 +242,15 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-9.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-11.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>We Build Your Dream</h2>
+                                        <h2>We provide Heavy Laser Cutting Machine</h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt illum
-                                            cupiditate rem at earum voluptatem tempore quae pariatur sed inventore error
-                                            ducimus,</p>
+                                        <p></p>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div data-swiper-parallax="500" class="slide-btns">
@@ -263,17 +261,15 @@
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-8.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-12.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>we are industry factory solution</h2>
+                                        <h2>We provide Laser Cutting Equipment</h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt illum
-                                            cupiditate rem at earum voluptatem tempore quae pariatur sed inventore error
-                                            ducimus,</p>
+                                        <p></p>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div data-swiper-parallax="500" class="slide-btns">
@@ -284,17 +280,15 @@
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-10.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-13.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>We Are The Best In The Industry</h2>
+                                        <h2>We provide Mental Bending Equipment </h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt illum
-                                            cupiditate rem at earum voluptatem tempore quae pariatur sed inventore error
-                                            ducimus,</p>
+                                        <p></p>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div data-swiper-parallax="500" class="slide-btns">
@@ -321,25 +315,23 @@
                     <div class="col-lg-6 col-12">
                         <div class="about-left-image">
                             <div class="ab-3">
-                                <img src="{{ asset ('Frontend/assets/images/ab-3.jpg') }}" alt="">
+                                <img src="{{ asset ('Frontend/assets/images/ab-7.jpg') }}" alt="">
                             </div>
                             <div class="ab-4">
-                                <img src="{{ asset ('Frontend/assets/images/ab-4.jpg') }}" alt="">
+                                <img src="{{ asset ('Frontend/assets/images/ab-6.jpg') }}" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="content">
                             <div class="text">
-                                <h2>About Company</h2>
-                                <h3>We Are Solving All of Your Business Problem</h3>
+                                <h2>About Us</h2>
+                                {{-- <h3>We Are Solving All of Your Business Problem</h3> --}}
                                 <p>
-                                    Our industry's business policy encompasses the strategies, guidelines, and
-                                    practices
-                                    that technology companies use to achieve their goals and objectives.
+                                    Hidgar is a global business dedicated to the development, manufacturing, and distribution of laser cutting equipment.Our commitment is in creating and producing laser machines of the highest caliber. Since its founding in 1996, the business has continued to develop at a rapid pace.
                                 </p>
                             </div>
-                            <div class="list">
+                            {{-- <div class="list">
                                 <ul>
                                     <li><i class="ti-check"></i> <span>Raw Materials</span></li>
                                     <li><i class="ti-check"></i> <span>Quality Control</span></li>
@@ -351,7 +343,7 @@
                                     <li><i class="ti-check"></i> <span>Finished Goods</span></li>
                                 </ul>
 
-                            </div>
+                            </div> --}}
                             <div class="about-btn">
                                 <a href="{{ route('about') }}" class="theme-btn">About Us</a>
                             </div>
@@ -376,7 +368,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="service-card">
                             <div class="image">
-                                <img src="{{ asset ('Frontend/assets/images/service/1.jpg') }}" alt="">
+                                <img src="{{ asset ('Frontend/assets/images/service/5.jpg') }}" alt="">
                                 <span>01</span>
                                 <div class="line-one"></div>
                                 <div class="line-two"></div>
@@ -385,8 +377,8 @@
                                 <div class="icon">
                                     <img src="{{ asset ('Frontend/assets/images/service/icon-1.svg') }}" alt="">
                                 </div>
-                                <h2><a href="{{ route('services') }}">Power & Energy Sectors</a></h2>
-                                <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.
+                                <h2><a href="{{ route('services') }}">Sheet & Tube Laser Cutting Machine</a></h2>
+                                <p>Finest Products 
                                 </p>
                             </div>
                         </div>
@@ -394,7 +386,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="service-card">
                             <div class="image">
-                                <img src="{{ asset ('Frontend/assets/images/service/2.jpg') }}" alt="">
+                                <img src="{{ asset ('Frontend/assets/images/service/6.jpg') }}" alt="">
                                 <span>02</span>
                                 <div class="line-one"></div>
                                 <div class="line-two"></div>
@@ -403,8 +395,8 @@
                                 <div class="icon">
                                     <img src="{{ asset ('Frontend/assets/images/service/icon-2.svg') }}" alt="">
                                 </div>
-                                <h2><a href="{{ route('services') }}">Architectures & Design</a></h2>
-                                <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.
+                                <h2><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></h2>
+                                <p>Best Laser Cutting Machine is available.
                                 </p>
                             </div>
                         </div>
@@ -412,7 +404,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="service-card">
                             <div class="image">
-                                <img src="{{ asset ('Frontend/assets/images/service/3.jpg') }}" alt="">
+                                <img src="{{ asset ('Frontend/assets/images/service/7.jpg') }}" alt="">
                                 <span>03</span>
                                 <div class="line-one"></div>
                                 <div class="line-two"></div>
@@ -421,8 +413,8 @@
                                 <div class="icon">
                                     <img src="{{ asset ('Frontend/assets/images/service/icon-3.svg') }}" alt="">
                                 </div>
-                                <h2><a href="{{ route('services') }}">Explore Tiling & Painiting</a></h2>
-                                <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget pellentesque.
+                                <h2><a href="{{ route('services') }}">Organic & Fiber Materials</a></h2>
+                                <p>We have both Organic & Fiber Materials 
                                 </p>
                             </div>
                         </div>
@@ -441,7 +433,7 @@
         </section>
 
         <!-- start of wpo-team-section -->
-        <section class="wpo-team-section section-padding">
+        {{-- <section class="wpo-team-section section-padding">
             <div class="container">
                 <div class="row justify-content-left">
                     <div class="col-12">
@@ -498,7 +490,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <!-- start of wpo-project-section -->
         <section class="wpo-project-section ">
@@ -509,10 +501,8 @@
                             <img src="{{ asset ('Frontend/assets/images/project/1.jpg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h3><a href="project-single.html">Custom Fabrication</a></h3>
-                            <p>Quis id at rhoncus consequat. Aliquam in. Velit phasellus augue tristique integer arcu.
-                                Elit
-                                sed vestibulum tristique suspendisse ut sit.</p>
+                            <h3><a href="{{ route('products') }}">Laser Cutting Machine</a></h3>
+                            <p></p>
                         </div>
                     </div>
                     <div class="project-card">
@@ -520,10 +510,8 @@
                             <img src="{{ asset ('Frontend/assets/images/project/2.jpg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h3><a href="project-single.html">Custom Fabrication</a></h3>
-                            <p>Quis id at rhoncus consequat. Aliquam in. Velit phasellus augue tristique integer arcu.
-                                Elit
-                                sed vestibulum tristique suspendisse ut sit.</p>
+                            <h3><a href="{{ route('products') }}">Custom Fabrication</a></h3>
+                            <p></p>
                         </div>
                     </div>
                     <div class="project-card">
@@ -531,10 +519,8 @@
                             <img src="{{ asset ('Frontend/assets/images/project/3.jpg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h3><a href="project-single.html">Custom Fabrication</a></h3>
-                            <p>Quis id at rhoncus consequat. Aliquam in. Velit phasellus augue tristique integer arcu.
-                                Elit
-                                sed vestibulum tristique suspendisse ut sit.</p>
+                            <h3><a href="{{ route('products') }}">Welding Machine</a></h3>
+                            <p></p>
                         </div>
                     </div>
                     <div class="project-card">
@@ -542,10 +528,8 @@
                             <img src="{{ asset ('Frontend/assets/images/project/4.jpg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h3><a href="project-single.html">Custom Fabrication</a></h3>
-                            <p>Quis id at rhoncus consequat. Aliquam in. Velit phasellus augue tristique integer arcu.
-                                Elit
-                                sed vestibulum tristique suspendisse ut sit.</p>
+                            <h3><a href="{{ route('products') }}">Heavy Equipment</a></h3>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -553,7 +537,7 @@
         </section>
 
         <!-- start of wpo-testimonial-section -->
-        <section class="wpo-testimonial-section section-padding">
+        {{-- <section class="wpo-testimonial-section section-padding">
             <div class="container">
                 <div class="row justify-content-left">
                     <div class="col-12">
@@ -614,10 +598,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <!-- start of wpo-blog-section -->
-        <section class="wpo-blog-section section-padding">
+        {{-- <section class="wpo-blog-section section-padding">
             <div class="container">
                 <div class="row justify-content-left">
                     <div class="col-12">
@@ -683,7 +667,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
         <!-- start of wpo-site-footer-section -->
@@ -696,8 +680,7 @@
                                 <div class="logo widget-title">
                                     <img src="{{ asset ('Frontend/assets/images/logo/HIDGAR_LOGO__.png') }}" alt="blog">
                                 </div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iure blanditiis
-                                    labore tempora inventore laborum error molestias,</p>
+                                <p></p>
                                 <div class="social-widget">
                                     <ul>
                                         <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -715,11 +698,11 @@
                                     <h3>Our Services</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="{{ route('services') }}">Power & Energy Sectors</a></li>
-                                    <li><a href="{{ route('services') }}">Architectures & Design</a></li>
-                                    <li><a href="{{ route('services') }}">Explore Tiling & Painiting</a></li>
-                                    <li><a href="{{ route('services') }}">Petroleum Production</a></li>
-                                    <li><a href="{{ route('services') }}">chemical engineering</a></li>
+                                    <li><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></li>
+                                    <li><a href="{{ route('services') }}">Flexible Materials</a></li>
+                                    <li><a href="{{ route('services') }}">Non-metallic Hard Materials</a></li>
+                                    <li><a href="{{ route('services') }}">Sheet & Tube Laser Cutting Machine</a></li>
+                                    <li><a href="{{ route('services') }}">Organic & Fiber Materials</a></li>
                                 </ul>
                             </div>
                         </div>

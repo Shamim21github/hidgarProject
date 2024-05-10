@@ -1474,8 +1474,8 @@ img {
   }
   .wpo-site-header #navbar > ul > li > a:hover:before,
   .wpo-site-header #navbar > ul > li > a.active:before {
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
   }
   .wpo-site-header #navbar > ul > li > .sub-menu > .menu-item-has-children > a {
     position: relative;

@@ -29,23 +29,22 @@
         <div class="service-slider owl-carousel">
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/1.jpg')}}" alt="">
+                    <img src="{{ asset ('Frontend/assets/images/service/5.jpg')}}" alt="">
                     <span>01</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
                 </div>
                 <div class="content">
-                    <div class="icon">
+                    <div class="icon">  
                         <img src="{{ asset('Frontend/assets/images/service/icon-1.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Power & Energy Sectors</a></h2>
-                    <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget
-                        pellentesque.</p>
+                    <h2><a href="{{ route('services') }}">Fiber Laser Cutting Ma</a></h2>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/2.jpg')}}" alt="">
+                    <img src="{{ asset ('Frontend/assets/images/service/6.jpg')}}" alt="">
                     <span>02</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -54,14 +53,13 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-2.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Architectures & Design</a></h2>
-                    <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget
-                        pellentesque.</p>
+                    <h2><a href="{{ route('services') }}">Non-metallic Hard Materials</a></h2>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/3.jpg')}}" alt="">
+                    <img src="{{ asset ('Frontend/assets/images/service/7.jpg')}}" alt="">
                     <span>03</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -70,14 +68,13 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-3.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Explore Tiling & Painiting</a></h2>
-                    <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget
-                        pellentesque.</p>
+                    <h2><a href="{{ route('services') }}">Flexible Materials</a></h2>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/4.jpg')}}" alt="">
+                    <img src="{{ asset ('Frontend/assets/images/service/8.jpg')}}" alt="">
                     <span>04</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -86,9 +83,8 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-4.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Petroleum Production</a></h2>
-                    <p>Sagittis fringilla a scelerisque sitro consetetur nunc. Urna est eget
-                        pellentesque.</p>
+                    <h2><a href="{{ route('services') }}">Organic & Fiber Materials</a></h2>
+                    <p></p>
                 </div>
             </div>
         </div>

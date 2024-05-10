@@ -26,11 +26,11 @@
                             <h3>Our Services</h3>
                         </div>
                         <ul>
-                            <li><a href="{{ route('services') }}">Power & Energy Sectors</a></li>
-                            <li><a href="{{ route('services') }}">Architectures & Design</a></li>
-                            <li><a href="{{ route('services') }}">Explore Tiling & Painiting</a></li>
-                            <li><a href="{{ route('services') }}">Petroleum Production</a></li>
-                            <li><a href="{{ route('services') }}">chemical engineering</a></li>
+                            <li><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></li>
+                            <li><a href="{{ route('services') }}">Flexible Materials</a></li>
+                            <li><a href="{{ route('services') }}">Non-metallic Hard Materials</a></li>
+                            <li><a href="{{ route('services') }}">Sheet & Tube Laser Cutting Machine</a><li>
+                            <li><a href="{{ route('services') }}">Organic & Fiber Materials</a></li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col col-xs-12">
-                    <p class="copyright"> Copyright &copy; 2024 Shamim <a href="index.html"></a>.
+                    <p class="copyright"> Copyright &copy; 2024 Hidgar <a href="#"></a>.
                         All
                         Rights Reserved.
                     </p>
