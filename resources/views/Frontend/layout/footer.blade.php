@@ -20,10 +20,27 @@
                     </div>
                 </div>
 
+
                 <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                     <div class="widget link-widget">
                         <div class="widget-title">
-                            <h3>Our Services</h3>
+                            <h3>Navigation</h3>
+                        </div>
+                        <ul>
+                            <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
+                            <li><a href="{{ route('services') }}">Products</a></li>
+                            <li><a href="{{ route('services') }}">Service</a></li>
+                            {{-- <li><a href="blog.html">blog</a></li> --}}
+                            <li><a href="{{ route('contact') }}">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="widget link-widget">
+                        <div class="widget-title">
+                            <h3>What we offer</h3>
                         </div>
                         <ul>
                             <li><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></li>
@@ -36,21 +53,7 @@
                 </div>
 
 
-                <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
-                    <div class="widget link-widget">
-                        <div class="widget-title">
-                            <h3>Navigalion</h3>
-                        </div>
-                        <ul>
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="{{ route('about') }}">About Us</a></li>
-                            <li><a href="{{ route('services') }}">Products</a></li>
-                            <li><a href="{{ route('services') }}">Service</a></li>
-                            {{-- <li><a href="blog.html">blog</a></li> --}}
-                            <li><a href="{{ route('contact') }}">Contact us</a></li>
-                        </ul>
-                    </div>
-                </div>
+                
 
                 <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                     <div class="widget newsletter-widget">

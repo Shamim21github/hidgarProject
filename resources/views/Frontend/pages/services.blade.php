@@ -38,7 +38,7 @@
                     <div class="icon">  
                         <img src="{{ asset('Frontend/assets/images/service/icon-1.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Fiber Laser Cutting Ma</a></h2>
+                    <h2><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></h2>
                     <p></p>
                 </div>
             </div>

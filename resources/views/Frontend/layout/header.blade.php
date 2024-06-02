@@ -1,4 +1,54 @@
+{{-- <style>
+    body {
+        margin: 0;
+        padding-top: 80px;
+        /* Adjust based on header height */
+    }
 
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        /* Ensure it's above other elements */
+        background-color: #fff;
+        /* Ensure it has a background color */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Optional: Add a subtle shadow for better visibility */
+    }
+
+    .topbar {
+        background-color: #f8f8f8;
+        /* Background color for topbar */
+    }
+
+    .navigation {
+        background-color: #fff;
+        /* Background color for navigation */
+    }
+
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-brand img {
+        max-height: 50px;
+        /* Adjust as necessary */
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 20px;
+        /* Adjust as necessary */
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+</style> --}}
 <header id="header">
     <div class="topbar">
         <div class="container-fluid">
@@ -6,7 +56,7 @@
                 <div class="col col-lg-7 col-md-8 col-sm-12 col-12">
                     <div class="contact-intro">
                         <ul>
-                            
+
                             <li class="marquee-container"><span class="marquee-text">HIDGAR</span></li>
                             {{-- <li><i class="fi flaticon-phone-call"></i> 01976388373</li>
                             <li><i class="fi ti-location-pin"></i> Dhaka, Bangladesh</li> --}}
@@ -50,7 +100,7 @@
                     </div>
                     <div class="col-lg-2 col-md-6 col-6">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="{{route('home')}}"><img
+                            <a class="navbar-brand" href="{{ route('home') }}"><img
                                     src="{{ asset('Frontend/assets/images/logo/HIDGAR_LOGO__.png') }}"
                                     alt="logo"></a>
                         </div>
@@ -81,9 +131,11 @@
                                 <li class="menu-item-has-children ">
                                     <a href="{{ route('products') }}">Products</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('products1') }}">Laser Cutting Sheet Metal Equipment </a></li>
-                                        <li><a href="{{ route('products2') }}"> Combination sheet and tube laser cutting Equipment
-                                        </a></li>
+                                        <li><a href="{{ route('products1') }}">Laser Cutting Sheet Metal Equipment </a>
+                                        </li>
+                                        <li><a href="{{ route('products2') }}"> Combination sheet and tube laser cutting
+                                                Equipment
+                                            </a></li>
                                         <li><a href="{{ route('products3') }}">Laser Welding Equipment </a></li>
                                         <li><a href="{{ route('products4') }}">Metal Bending Equipment </a></li>
                                         <li><a href="{{ route('products5') }}">Pipe Bending Equipment </a></li>
@@ -91,7 +143,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="{{ route('services') }}">Service</a>            
+                                    <a href="{{ route('services') }}">Service</a>
                                 </li>
                                 {{-- <li class="menu-item-has-children">
                                     <a href="{{ route('projects') }}">Project</a>                                
@@ -99,7 +151,7 @@
                                 {{-- <li class="menu-item-has-children">
                                     <a href="{{ route('team') }}">Team</a>  
                                 </li> --}}
-                                
+
                                 {{-- <li class="menu-item-has-children">
                                     <a href="{{ route('blog') }}">Blog</a>
                                     <ul class="sub-menu">
@@ -174,17 +226,15 @@
                                     <div class="header-search-form">
                                         <form>
                                             <div>
-                                                <input type="text" class="form-control"
-                                                    placeholder="Search here...">
-                                                <button type="submit"><i
-                                                        class="fi flaticon-loupe"></i></button>
+                                                <input type="text" class="form-control" placeholder="Search here...">
+                                                <button type="submit"><i class="fi flaticon-loupe"></i></button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
                             <div class="close-form">
-                                <a class="theme-btn" href="contact.html">Get In Touch</a>
+                                <a class="theme-btn" href="{{ route('contact') }}">Get In Touch</a>
                             </div>
                         </div>
                     </div>

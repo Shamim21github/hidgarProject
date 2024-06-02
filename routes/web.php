@@ -3,6 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 
+//backend
+use App\Http\Controllers\ContactController;
+
+
+
+
+
+
+
+
+
 
 
 
@@ -46,6 +57,17 @@ Route::get('/products-details06', function () {
 /* Product Details Route end */
 
 
+// Single Product page details Route start
+
+Route::get('/economicalMetal', function () {
+    return view('Frontend.pages.economicalMetal');
+})->name('economicalMetal');
+Route::get('/LargeMetal', function () {
+    return view('Frontend.pages.LargeMetal');
+})->name('LargeMetal');
+
+
+
 
 
 Route::get('/services', function () {
@@ -72,3 +94,11 @@ Route::get('/contact', function () {
 // Route::get('/contact', function () {
 //     return view('Frontend.pages.contact');
 // })->name('contact');
+
+
+
+
+//backend
+// Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+Route::resource('contacts', ContactController::class);

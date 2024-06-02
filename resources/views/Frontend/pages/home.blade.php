@@ -226,7 +226,7 @@
                                         </div>
                                     </div>
                                     <div class="close-form">
-                                        <a class="theme-btn" href="contact.html">Get In Touch</a>
+                                        <a class="theme-btn" href="{{ route('contact') }}">Get In Touch</a>
                                     </div>
                                 </div>
                             </div>
@@ -359,8 +359,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-12">
                         <div class="wpo-section-title-s2">
-                            <h2>What We Offer</h2>
-                            <h3>Our Services</h3>
+                            <h3>What We Offer</h3>
+                            {{-- <h3>Our Services</h3> --}}
                         </div>
                     </div>
                 </div>
@@ -692,10 +692,27 @@
                             </div>
                         </div>
 
-                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+
+                        <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
                             <div class="widget link-widget">
                                 <div class="widget-title">
-                                    <h3>Our Services</h3>
+                                    <h3>Navigation</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="{{ route('home') }}">Home</a></li>
+                                    <li><a href="{{ route('about') }}">About Us</a></li>
+                                    <li><a href="{{ route('services') }}">Products</a></li>
+                                    <li><a href="{{ route('services') }}">Service</a></li>
+                                    {{-- <li><a href="blog.html">blog</a></li> --}}
+                                    <li><a href="{{ route('contact') }}">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-3 col-md-8 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>What we Offer</h3>
                                 </div>
                                 <ul>
                                     <li><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></li>
@@ -708,21 +725,7 @@
                         </div>
 
 
-                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="widget link-widget">
-                                <div class="widget-title">
-                                    <h3>Navigalion</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="{{ route('home') }}">Home</a></li>
-                                    <li><a href="{{ route('about') }}">About Us</a></li>
-                                    <li><a href="{{ route('services') }}">Products</a></li>
-                                    <li><a href="{{ route('services') }}">Service</a></li>
-                                    {{-- <li><a href="blog.html">blog</a></li> --}}
-                                    <li><a href="{{ route('contact') }}">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        
 
                         <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="widget newsletter-widget">

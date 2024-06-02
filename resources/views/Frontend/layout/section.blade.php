@@ -131,8 +131,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-12">
                 <div class="wpo-section-title-s2">
-                    <h2>What We Offer</h2>
-                    <h3>Our Services</h3>
+                    <h3>What We Offer</h3>
+                    {{-- <h3>Our Services</h3> --}}
                 </div>
             </div>
         </div>

@@ -23,6 +23,8 @@
     <link href="{{ asset('Frontend/assets/css/jquery.fancybox.css') }}" rel="stylesheet">
     <link href="{{ asset('Frontend/assets/css/odometer-theme-default.css') }}" rel="stylesheet">
     <link href="{{ asset('Frontend/assets/sass/style.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    
 </head>
 
 <body>

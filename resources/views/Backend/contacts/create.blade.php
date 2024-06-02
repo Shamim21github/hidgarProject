@@ -122,11 +122,10 @@
 <section class="wpo-contact-map-section">
     <h2 class="hidden">Contact map</h2>
     <div class="wpo-contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42583.78566031779!2d11.604103604520834!3d48.15870219488891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7524c69e5b5f%3A0x51d25a40939a8a0!2sMunich-Bogenhausen%2C%20Germany!5e0!3m2!1sen!2sbd!4v1716376824682!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        {{-- <iframe
+        <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.6080817772845!2d90.36790784069451!3d23.78999143181612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0b58914ed45%3A0xb88612d8fbfb11a9!2sWest%20Shewrapara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1711454912966!5m2!1sen!2sbd"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 
