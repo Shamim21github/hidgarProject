@@ -33,16 +33,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">Affordable Metal Laser Cutting Machine</h1>
+                <h1 style="text-align: center;">High Power Sheet Metal Laser Cutting Machine: Power Meets Precision</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">Specializing in low-power operations (1000w-2000w), it's perfect for
-                    efficiently cutting and marking thin metal sheets.</h6>
+                <h6 style="text-align: center;">20,000W laser machine that excels with metal. Engineered for detailed and dense metalwork, it's the precision choice for industrial needs.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
                     <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/1\9.jpg') }}" class="card-img-top"
+                        <img src="{{ asset('Frontend/assets/images/1\singlebed5.jpg') }}" class="card-img-top"
                             alt="Product Image 1">
                     </a>
                 </div>
@@ -51,16 +50,15 @@
                 <div class="card" style="width: 28rem;">
                     <a href="#">
                         <div class="card-body">
-                            <h4 class="card-title">Economical Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: It offers a big-size option for construction and car sectors. Its
-                                high-power laser source with air compressors for efficient and affordable cutting.Very
-                                Powerful Product & maintaince easy.</p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
+                            <h4 class="card-title">High Power Fiber Laser Cutting Machine</h4>
+                            <p class="card-text">Features: Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.
+                                </p>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 20000w</h6>
                             <div>
                                 <ul class="text-dark">
-                                    <li>Precision Cutting Made Affordable</li>
-                                    <li>Ease of Use for Beginners</li>
-                                    <li> Ideal for Small-Scale Metal Work</li>
+                                    <li>High Power Performance</li>
+                                    <li>Save on Shipping Costs</li>
+                                    <li> Model Upgrade Flexibility</li>
                                 </ul>
                             </div> <br>
 
@@ -74,7 +72,7 @@
                     <i class="ti-linkedin"></i></a></li>
                     </ul>
 
-                </div> <br> <br>
+                </div>
 
                 <button type="submit" class="btn btn-primary">Order Now</button>
             </div>
@@ -139,7 +137,7 @@
     </div>
 
     <div class="col-md-12">
-        <h4 class="text-center">Sheet Metal Laser Cutting Machine Features</h4 class="text-center">
+        <h4 class="text-center">Hidgar Machine Transmission and Precision</h4 class="text-center">
     </div>
 
 

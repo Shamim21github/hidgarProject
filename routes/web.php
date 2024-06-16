@@ -62,9 +62,21 @@ Route::get('/products-details06', function () {
 Route::get('/economicalMetal', function () {
     return view('Frontend.pages.economicalMetal');
 })->name('economicalMetal');
-Route::get('/LargeMetal', function () {
-    return view('Frontend.pages.LargeMetal');
-})->name('LargeMetal');
+Route::get('/basicMetal', function () {
+    return view('Frontend.pages.basicMetal');
+})->name('basicMetal');
+Route::get('/encloseMetal', function () {
+    return view('Frontend.pages.encloseMetal');
+})->name('enclosedMetal');
+Route::get('/exchangeMetal', function () {
+    return view('Frontend.pages.exchangeMetal');
+})->name('exchangeMetal');
+Route::get('/singleMetal', function () {
+    return view('Frontend.pages.singleMetal');
+})->name('singleMetal');
+Route::get('/largeMetal', function () {
+    return view('Frontend.pages.largeMetal');
+})->name('largeMetal');
 
 
 

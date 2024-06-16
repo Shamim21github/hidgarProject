@@ -18,7 +18,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
                     <a href="{{ route('economicalMetal') }}">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images/1\9.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Economical Fiber Laser Cutting Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
@@ -30,12 +30,12 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('LargeMetal') }}">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting02.jpg') }}" alt="Product Image 1">
+                    <a href="{{ route('basicMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/1\basic2.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
-                            <h4 class="card-title">Large Size Fiber Laser Cutting Machine</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
-                            <p class="card-text">Features: It offers a big-size option for construction and car sectors. Its high-power laser source with air compressors for efficient and affordable cutting.Very Powerful Product & maintaince easy.</p>
+                            <h4 class="card-title">Basic High Power Fiber Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 20000w</h6>
+                            <p class="card-text">Features :Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>
                         </div>
                     </a>
@@ -43,12 +43,12 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" class="card-img-top" alt="Product Image 1">
+                    <a href="{{ route('enclosedMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images\1\19.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
-                            <h4 class="card-title">Exchange Platform Laser Cutting Machine</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000W, 3000W, 6000W, 12000W, 20000W</h6>
-                            <p class="card-text">Features: Boosts efficiency with its exchangeable worktable, minimizing idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting, suitable for high-volume</p>
+                            <h4 class="card-title">Enclosed Protective Fiber Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 50000w</h6>
+                            <p class="card-text">Features: The LF-PE is engineered for smart, accurate tasks. It has an advanced CNC system for automatic operations. It's ideal for cutting a variety of metals, including carbon steel, stainless steel.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>
                         </div>
                     </a>
@@ -56,12 +56,12 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" class="card-img-top" alt="Product Image 1">
+                    <a href="{{ route('exchangeMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/1\19.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
-                            <h4 class="card-title">Enclosed Fiber Laser Cutting Machine</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
-                            <p class="card-text">The Large Cutting Machine merges safety with efficiency, boasting a big enclosure that lessens noise and boosts safety. It makes accurate cuts and keeps the workspace tidy and safe.It is very Powrful</p>
+                            <h4 class="card-title">Exchange Table Fiber Laser Cutting  Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 12000w</h6>
+                            <p class="card-text">Features: Boosts efficiency with its exchangeable worktable, minimizing idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting, suitable for high-volume and precision tasks.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>
                         </div>
                     </a>
@@ -69,25 +69,25 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" class="card-img-top" alt="Product Image 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Large Size Fiber Laser Cutting Machine</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000W - 50000W</h6>
-                            <p class="card-text">LF-L offers a big-size option for construction and car sectors. Its high-power laser source with air compressors for efficient and affordable cutting.</p>
-                            <button type="submit" class="btn btn-primary">Read More</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card" style="width: 28rem;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" class="card-img-top" alt="Product Image 1">
+                    <a href="{{ route('singleMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/1\singlebed5.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Single Bed Enclosed Laser Cutting Machine</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1000W, 1500W, 3000W</h6>
-                            <p class="card-text">Features: 2023 launch, the LF-SE, designed for the European market, offers an enclosed, safe, and eco-friendly design. Very easy to ship and install.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1000w, 1500w, 2000w, 3000w</h6>
+                            <p class="card-text">Features: 2023 launch, the LF-SE, designed for the European market, offers an enclosed, safe, and eco-friendly design. Easy to ship and install, it minimizes transport and setup costs. and metal furniture manufacturing industries.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('largeMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/1\largesize6.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Large Size Fiber Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 12000w, 20000w, 50000w</h6>
+                            <p class="card-text">Features: Efficient and precise large-format laser cutting machine, ideal for large-scale production processing. LF-L perfectly integrates comfortable and convenient operating space, safe product performance, interconnection experience.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>
                         </div>
                     </a>

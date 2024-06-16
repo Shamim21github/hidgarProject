@@ -41,7 +41,7 @@
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
                     <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserCutting01.jpg') }}" class="card-img-top"
+                        <img src="{{ asset('Frontend/assets/images/1\largesize6.jpg') }}" class="card-img-top"
                             alt="Product Image 1">
                     </a>
                 </div>
