@@ -66,7 +66,7 @@ Route::get('/basicMetal', function () {
     return view('Frontend.pages.basicMetal');
 })->name('basicMetal');
 Route::get('/encloseMetal', function () {
-    return view('Frontend.pages.encloseMetal');
+    return view('Frontend.pages.enclosedMetal');
 })->name('enclosedMetal');
 Route::get('/exchangeMetal', function () {
     return view('Frontend.pages.exchangeMetal');

@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('LargeMetal') }}">
+                    <a href="{{ route('largeMetal') }}">
                         <img src="{{ asset('Frontend/assets/images/3\3.12.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Suitcase Laser Cleaning Machine</h4>

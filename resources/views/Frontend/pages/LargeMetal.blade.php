@@ -33,10 +33,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">High Power Sheet Metal Laser Cutting Machine: Power Meets Precision</h1>
+                <h1 style="text-align: center;">Large Size Fiber Laser Cutting Machine: High power and high precision</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">20,000W laser machine that excels with metal. Engineered for detailed and dense metalwork, it's the precision choice for industrial needs.</h6>
+                <h6 style="text-align: center;">Efficient and cost-effective option for the construction and automotive industries</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
@@ -50,15 +50,15 @@
                 <div class="card" style="width: 28rem;">
                     <a href="#">
                         <div class="card-body">
-                            <h4 class="card-title">High Power Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.
+                            <h4 class="card-title">Large Size Fiber Laser Cutting Machine</h4>
+                            <p class="card-text">Features: Efficient and precise large-format laser cutting machine, ideal for large-scale production processing. LF-L perfectly integrates comfortable and convenient operating space, safe product performance, and excellent new smart interconnection experience.
                                 </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 20000w</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser power：12000w, 20000w, 50000w</h6>
                             <div>
                                 <ul class="text-dark">
-                                    <li>High Power Performance</li>
-                                    <li>Save on Shipping Costs</li>
-                                    <li> Model Upgrade Flexibility</li>
+                                    <li>Precision Cutting Made Affordable</li>
+                                    <li>Ease of Use for Beginners</li>
+                                    <li> Ideal for Large-Scale Metal Work</li>
                                 </ul>
                             </div> <br>
 
@@ -80,7 +80,7 @@
         </div>
     </div> <br>
     <div class="col-md-12">
-        <h4 class="text-center">Sheet Metal Laser Cutting Machine Technical Specifications</h4>
+        <h4 class="text-center">Metal Laser Cutting Machine Technical Specifications</h4>
     </div>
     <div class="col-md-12 ">
         <table class="table table-bordered">

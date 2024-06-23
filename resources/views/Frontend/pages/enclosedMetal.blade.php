@@ -33,10 +33,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">High Power Sheet Metal Laser Cutting Machine: Power Meets Precision</h1>
+                <h1 style="text-align: center;">Enclosed Fiber Laser Cutting Machine: Revolutionizing Metal Fabrication</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">20,000W laser machine that excels with metal. Engineered for detailed and dense metalwork, it's the precision choice for industrial needs.</h6>
+                <h6 style="text-align: center;">Automated, precise, and versatile for various metals. Efficiency meets innovation.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
@@ -50,15 +50,15 @@
                 <div class="card" style="width: 28rem;">
                     <a href="#">
                         <div class="card-body">
-                            <h4 class="card-title">High Power Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.
+                            <h4 class="card-title">Enclosed Protective Fiber Laser Cutting Machine</h4>
+                            <p class="card-text">Features: The LF-PE is engineered for smart, accurate tasks. It has an advanced CNC system for automatic operations. It's ideal for cutting a variety of metals, including carbon steel, stainless steel, copper plates, aluminum plates, and galvanized sheets.
                                 </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 20000w</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 50000w</h6>
                             <div>
                                 <ul class="text-dark">
-                                    <li>High Power Performance</li>
-                                    <li>Save on Shipping Costs</li>
-                                    <li> Model Upgrade Flexibility</li>
+                                    <li>Intelligent CNC System</li>
+                                    <li>Precision Engineering</li>
+                                    <li>Camera Monitoring Front and Rear Bed</li>
                                 </ul>
                             </div> <br>
 

@@ -33,10 +33,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">High Power Sheet Metal Laser Cutting Machine: Power Meets Precision</h1>
+                <h1 style="text-align: center;">Precision Meets Performance: Hidgar Fiber Laser Cutting Machine
+                </h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">20,000W laser machine that excels with metal. Engineered for detailed and dense metalwork, it's the precision choice for industrial needs.</h6>
+                <h6 style="text-align: center;">As a leading factory and manufacturer, we deliver top-tier exchange table fiber laser cutting machine, that enhance precision and productivity in metal fabrication.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
@@ -50,15 +51,15 @@
                 <div class="card" style="width: 28rem;">
                     <a href="#">
                         <div class="card-body">
-                            <h4 class="card-title">High Power Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.
+                            <h4 class="card-title">Exchange Table Fiber Laser Cutting Machine</h4>
+                            <p class="card-text">Features: Boosts efficiency with its exchangeable worktable, minimizing idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting, suitable for high-volume and precision tasks.
                                 </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 20000w</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 12000w</h6>
                             <div>
                                 <ul class="text-dark">
-                                    <li>High Power Performance</li>
-                                    <li>Save on Shipping Costs</li>
-                                    <li> Model Upgrade Flexibility</li>
+                                    <li>Efficient Exchange Platform</li>
+                                    <li>Cost-Effective High Value</li>
+                                    <li>Broad Material Compatibility</li>
                                 </ul>
                             </div> <br>
 
@@ -80,7 +81,7 @@
         </div>
     </div> <br>
     <div class="col-md-12">
-        <h4 class="text-center">Sheet Metal Laser Cutting Machine Technical Specifications</h4>
+        <h4 class="text-center">Exchange Table Fiber Laser Cut Technical Specifications</h4>
     </div>
     <div class="col-md-12 ">
         <table class="table table-bordered">

@@ -33,10 +33,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">High Power Sheet Metal Laser Cutting Machine: Power Meets Precision</h1>
+                <h1 style="text-align: center;">Plug-and-Play Simplicity in CNC Fiber Laser Cutting</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">20,000W laser machine that excels with metal. Engineered for detailed and dense metalwork, it's the precision choice for industrial needs.</h6>
+                <h6 style="text-align: center;">Easy to use and ready on arrival. No complex setup needed. It simplifies metal cutting, making your work efficient and convenient.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
@@ -50,15 +50,15 @@
                 <div class="card" style="width: 28rem;">
                     <a href="#">
                         <div class="card-body">
-                            <h4 class="card-title">High Power Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.
+                            <h4 class="card-title">Single Bed Enclosed Laser Cutting Machine</h4>
+                            <p class="card-text">Features: 2023 launch, the LF-SE, designed for the European market, offers an enclosed, safe, and eco-friendly design. Easy to ship and install, it minimizes transport and setup costs. and metal furniture manufacturing industries.
                                 </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 20000w</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser power：1000w, 1500w, 2000w, 3000w</h6>
                             <div>
                                 <ul class="text-dark">
-                                    <li>High Power Performance</li>
-                                    <li>Save on Shipping Costs</li>
-                                    <li> Model Upgrade Flexibility</li>
+                                    <li> Enclosed Safety Design</li>
+                                    <li>Compact for Easy Shipping</li>
+                                    <li> Plug-and-Play Convenience</li>
                                 </ul>
                             </div> <br>
 
@@ -80,7 +80,7 @@
         </div>
     </div> <br>
     <div class="col-md-12">
-        <h4 class="text-center">Sheet Metal Laser Cutting Machine Technical Specifications</h4>
+        <h4 class="text-center">CNC Laser Cutting Machine Technical Specifications</h4>
     </div>
     <div class="col-md-12 ">
         <table class="table table-bordered">
@@ -88,25 +88,19 @@
                 <tr>
                     <th scope="col">Mode</th>
                     <th scope="col">LF-3015B</th>
-                    <th scope="col">LF-6015B</th>
-                    <th scope="col">LF-4020B</th>
-                    <th scope="col">LF-6025B</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">Working Area</th>
                     <td>3000*1500mm</td>
-                    <td>6000*1500mm</td>
-                    <td>4000*2000mm</td>
-                    <td>6000*2500mm</td>
+                   
                 </tr>
                 <tr>
                     <th scope="row">X Y Z Axis Stroke</th>
                     <td>1520*3100*100mm</td>
-                    <td>1520*6050*100mm</td>
-                    <td>2040*4050*100mm</td>
-                    <td>2510*6100*260mm</td>
+                    
                 </tr>
                 <tr>
                     <th scope="row">Laser Power Supply</th>
