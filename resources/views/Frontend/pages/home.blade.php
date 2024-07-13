@@ -261,7 +261,7 @@
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-12.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-14.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
@@ -280,7 +280,7 @@
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-13.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-15.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
