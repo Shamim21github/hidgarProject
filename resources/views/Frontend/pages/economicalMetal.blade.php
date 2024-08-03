@@ -18,10 +18,12 @@
         .card {
             text-align: center;
         }
+
         .card img {
             width: 100%;
             height: auto;
         }
+
         .card-body {
             padding: 1rem;
         }
@@ -42,8 +44,7 @@
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
                     <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/1\9.jpg') }}" class="card-img-top"
-                            alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images/1\9.jpg') }}" class="card-img-top" alt="Product Image 1">
                     </a>
                 </div>
             </div>
@@ -66,13 +67,6 @@
 
                             <div>
 
-                                <ul class="rounded-box">
-                                    <i class="ti-facebook"></i>
-                    </a></li>
-                    <i class="ti-instagram"></i></a></li>
-                    <i class="ti-twitter-alt"></i></a></li>
-                    <i class="ti-linkedin"></i></a></li>
-                    </ul>
 
                 </div> <br> <br>
 
@@ -148,7 +142,8 @@
             <div class="card-body">
                 <h5 class="card-title">Cast Aluminum Beam</h5>
                 <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                <p class="card-text">Our beam is made from high-grade aluminum. This material is chosen for its strength. It ensures swift and agile cutting motions. Precision is maintained.</p>
+                <p class="card-text">Our beam is made from high-grade aluminum. This material is chosen for its strength. It
+                    ensures swift and agile cutting motions. Precision is maintained.</p>
             </div>
         </div>
     </div>
@@ -157,7 +152,8 @@
             <div class="card-body">
                 <h5 class="card-title">Laser Cutting Head</h5>
                 <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal" class="card-img-top">
-                <p class="card-text">The laser cutting head on our machine is state-of-the-art. It consistently produces precise cuts. It's versatile across different materials. Optimal performance is a guarantee.</p>
+                <p class="card-text">The laser cutting head on our machine is state-of-the-art. It consistently produces
+                    precise cuts. It's versatile across different materials. Optimal performance is a guarantee.</p>
             </div>
         </div>
     </div>
@@ -166,7 +162,8 @@
             <div class="card-body">
                 <h5 class="card-title">Wireless Handheld Control</h5>
                 <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                <p class="card-text">Wireless handheld operation for ease and sensitivity. Perfectly compatible with the latest CNC system software and hardware.</p>
+                <p class="card-text">Wireless handheld operation for ease and sensitivity. Perfectly compatible with the
+                    latest CNC system software and hardware.</p>
             </div>
         </div>
     </div>
@@ -175,7 +172,8 @@
             <div class="card-body">
                 <h5 class="card-title">Intelligent Operating System</h5>
                 <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                <p class="card-text">CNC system is cutting-edge. Its 32-inch touch screen improve user experience. Dynamic adjustments make it over 60% quicker than traditional systems.
+                <p class="card-text">CNC system is cutting-edge. Its 32-inch touch screen improve user experience. Dynamic
+                    adjustments make it over 60% quicker than traditional systems.
                 </p>
             </div>
         </div>
@@ -185,7 +183,8 @@
             <div class="card-body">
                 <h5 class="card-title">Electrical Cabinet</h5>
                 <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                <p class="card-text">The electrical cabinet is designed for optimal power management. It ensures that power distribution is efficient. The operation of the machine remains reliable and safe at all times.
+                <p class="card-text">The electrical cabinet is designed for optimal power management. It ensures that power
+                    distribution is efficient. The operation of the machine remains reliable and safe at all times.
                 </p>
             </div>
         </div>
@@ -195,7 +194,8 @@
             <div class="card-body">
                 <h5 class="card-title">Chiller Unit</h5>
                 <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal" class="card-img-top">
-                <p class="card-text">A chiller unit is included to regulate the laser's temperature. Consistent performance is maintained. It also extends the lifespan of the machine. Dependability is enhanced.
+                <p class="card-text">A chiller unit is included to regulate the laser's temperature. Consistent performance
+                    is maintained. It also extends the lifespan of the machine. Dependability is enhanced.
                 </p>
             </div>
         </div>

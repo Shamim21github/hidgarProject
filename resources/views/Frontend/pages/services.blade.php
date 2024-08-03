@@ -24,12 +24,13 @@
     <div class="service-wrap">
         <div class="wpo-section-title">
             <h2>What We Offer</h2>
-            <h3>Our Services</h3>
+            {{-- <h3>Our Services</h3> --}}
         </div>
-        <div class="service-slider owl-carousel">
-            <div class="item">
+        <div class="service-slider owl-carousel col-lg-4 col-md-6 col-12">
+            <div class=" service-card ">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/5.jpg')}}" alt="">
+                    <a href="{{ route('economicalMetal') }}">
+                        <img src="{{ asset ('Frontend/assets/images/service/10.jpg') }}" alt="">
                     <span>01</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -44,7 +45,8 @@
             </div>
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/6.jpg')}}" alt="">
+                    <a href="{{ route('largeMetal') }}">
+                        <img src="{{ asset ('Frontend/assets/images/service/17.jpg') }}" alt="">
                     <span>02</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -53,13 +55,14 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-2.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Non-metallic Hard Materials</a></h2>
+                    <h2><a href="{{ route('services') }}"> Large Size  Machine</a></h2>
                     <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/7.jpg')}}" alt="">
+                    <a href="{{ route('products6') }}">
+                        <img src="{{ asset ('Frontend/assets/images/service/11.jpg') }}" alt="">
                     <span>03</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -68,13 +71,14 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-3.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Flexible Materials</a></h2>
+                    <h2><a href="{{ route('services') }}">Handheld Laser Metal Cleaner Machine</a></h2>
                     <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="image">
-                    <img src="{{ asset ('Frontend/assets/images/service/8.jpg')}}" alt="">
+                    <a href="{{ route('products6') }}">
+                        <img src="{{ asset ('Frontend/assets/images/service/18.jpg') }}" alt="">
                     <span>04</span>
                     <div class="line-one"></div>
                     <div class="line-two"></div>
@@ -83,7 +87,7 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-4.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Organic & Fiber Materials</a></h2>
+                    <h2><a href="{{ route('services') }}">Pipe Bending Machhines</a></h2>
                     <p></p>
                 </div>
             </div>

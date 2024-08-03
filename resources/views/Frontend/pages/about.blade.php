@@ -5,13 +5,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-12">
-                <div class="about-left-image">
-                    <div class="ab-3">
-                        <img src="{{ asset('Frontend/assets/images/ab-7.jpg') }}" alt="">
+                <div class="">
+                    <div class="ab-3" style="width:1000px!important">
+                        <img src="{{ asset('Frontend/assets/images/about2.jpg') }}" alt="">
+                        {{-- <img src="{{ asset('Frontend/assets/images/ab-7.jpg') }}" alt=""> --}}
                     </div>
-                    <div class="ab-4">
-                        <img src="{{ asset('Frontend/assets/images/ab-6.jpg') }}" alt="">
-                    </div>                    
                 </div>
             </div>
             <div class="col-lg-6 col-12">

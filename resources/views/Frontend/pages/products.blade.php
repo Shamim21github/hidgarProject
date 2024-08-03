@@ -1,6 +1,16 @@
 @extends('Frontend.layout.app')
 
 @section('content')
+
+<style>
+    .rounded-border {
+    border: 1px solid #000; /* Change the color and width as needed */
+    border-radius: 10px; /* Adjust the value to make the corners more or less rounded */
+    padding: 2px; /* Optional: Add padding inside the border */
+    background-color: #01B0FF;
+    
+}
+</style>
     <!-- start of breadcumb-section -->
     <div class="wpo-breadcumb-area">
         <div class="container">
@@ -16,208 +26,117 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> <br>
     <!-- end of wpo-breadcumb-section-->
-
-    <!-- wpo-Products-single-area start -->
-    <div class="wpo-Products-single-area section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-12">
-                    <div class="wpo-Products-single-wrap">
-                        <div class="wpo-Products-single-item">
-                            <div class="row align-items-center">
-                                <div class="col-lg-7">
-                                    <div class="wpo-Products-single-title">
-                                        <h3>Construction Management</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis
-                                        posuere
-                                        amet
-                                        tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea
-                                        condimentum
-                                        cursus
-                                        velit dui. Massa volutpat odio facilisis purus sit elementum. Non,
-                                        sed velit
-                                        dictum
-                                        quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.
-                                        Id
-                                        aliquet duis.</p>
-                                    <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa
-                                        volutpat
-                                        odio
-                                        facilisis purus sit elementum. Non, sed velit dictum quam. Id risus
-                                        pharetra
-                                        est, at
-                                        rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin
-                                        diam, elit
-                                        sit Et nisi in libero facilisis sed est.</p>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="wpo-Products-single-content-des-right">
-                                        <ul>
-                                            <li>Location :<span>7 Lake Street,London</span></li>
-                                            <li>Client :<span>wpOceans</span></li>
-                                            <li>Architect :<span>Don Johnson</span></li>
-                                            <li>Products Type :<span>Construction</span></li>
-                                            <li>Duration :<span>6 Month</span></li>
-                                            <li>Completion :<span>15 Dec 2024</span></li>
-                                            <li>Share :<span>Industrial, Business</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpo-Products-single-main-img owl-carousel">
-                                <img src="{{ asset('Frontend/assets/images/Products-single/1.jpg') }}" alt="">
-                                <img src="{{ asset('Frontend/assets/images/Products-single/4.jpg')}}" alt="">
-                            </div>
+    {{-- <li><a href="{{ route('products1') }}">Laser Cutting Sheet Metal Equipment </a></li>
+                                                <li><a href="{{ route('products2') }}"> Combination sheet and tube laser cutting Equipment
+                                                </a></li>
+                                                <li><a href="{{ route('products3') }}">Laser Welding Equipment </a></li>
+                                                <li><a href="{{ route('products4') }}">Metal Bending Equipment </a></li>
+                                                <li><a href="{{ route('products5') }}">Pipe Bending Equipment </a></li>
+                                                <li><a href="{{ route('products6') }}">Laser Cleaning Equipment </a></li> --}}
+    <div class="container-fluid">
+        <div class="row">
+           
+            {{-- <div class="col-md-12 mt-2 rounded-border"> 
+                <h1 style="text-align: center;color:white;">Our All Product lists</h1>
+            </div> --}}
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('economicalMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/1\9.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Laser Cutting Sheet Metal Equipment</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
+                            <p class="card-text">Features: A cost-effective and accurate fiber laser cutter, perfect for
+                                small production settings. The LF-EA features easy controls design, reducing both operation
+                                time and upkeep expenses.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
                         </div>
-                        <div class="wpo-Products-single-item list-widget">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wpo-Products-single-title">
-                                        <h3>Our Strategies</h3>
-                                    </div>
-                                    <p>Massa volutpat odio facilisis purus sit elementum. Non, sed velit
-                                        dictum
-                                        quam. Id
-                                        risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id
-                                        aliquet duis
-                                        sollicitudin diam.</p>
-                                    <ul>
-                                        <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                        <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.
-                                        </li>
-                                        <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                        <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                                        <li>Elit curabitur amet risus bibendum.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="wpo-Products-single-item-quote">
-                                        <p>"Amazing looking theme and instantly turns your application into
-                                            a great
-                                            looking one. Really shows that pro_ fessionals built this theme
-                                            up. Very
-                                            happy with the way the theme looks ."</p>
-                                        <span>Robert - <span>Yellow Theme</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpo-Products-single-item">
-                            <div class="wpo-Products-single-title">
-                                <h3>Our approach</h3>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-                                suspendisse aenean
-                                tellus augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci
-                                facilisi
-                                eros sed pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit
-                                elementum, magna id viverra non, velit. Pretium, eros, porttitor fusce
-                                auctor vitae
-                                id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel
-                                sem
-                                adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
-                                vulputate diam interdum morbi ac a.</p>
-                        </div>
-                        <div class="wpo-Products-single-gallery">
-                            <div class="row mt-4">
-                                <div class="col-md-6 col-sm-6 col-12">
-                                    <div class="wpo-p-details-img">
-                                        <img src="{{ asset ('Frontend/assets/images/Products-single/2.jpg') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-12">
-                                    <div class="wpo-p-details-img">
-                                        <img src="{{ asset ('Frontend/assets/images/Products-single/3.jpg') }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpo-Products-single-item list-widget">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="wpo-Products-single-title">
-                                        <h3>Resieved goals</h3>
-                                    </div>
-                                    <ul>
-                                        <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                        <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.
-                                        </li>
-                                        <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                        <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 list-widget-s">
-                                    <div class="wpo-Products-single-title">
-                                        <h3>Results</h3>
-                                    </div>
-                                    <ul>
-                                        <li>Mauris dignissim blandit cursus imperdiet accumsan lorem.</li>
-                                        <li>Nam id in non sed cras purus nunc et.</li>
-                                        <li>Mauris orci, cursus nisl odio est adipiscing gravida magna eget.
-                                        </li>
-                                        <li>Quis mauris vel felis convallis nulla dignissim.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpo-Products-single-item">
-                            <div class="wpo-Products-single-item">
-                                <div class="wpo-Products-contact-area">
-                                    <div class="wpo-contact-title">
-                                        <h2>Have Products in mind? Let's discuss</h2>
-                                        <p>Get in touch with us to see how we can help you with your Products
-                                        </p>
-                                    </div>
-                                    <div class="wpo-contact-form-area">
-                                        <form method="post" class="contact-validation-active" id="contact-form-main">
-                                            <div class="row">
-                                                <div class="col col-lg-6 col-md-6 col-12">
-                                                    <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Your Name*">
-                                                </div>
-                                                <div class="col col-lg-6 col-md-6 col-12">
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Your Email*">
-                                                </div>
-                                                <div class="col col-lg-12 col-12">
-                                                    <select name="service" class="form-control">
-                                                        <option disabled="disabled" selected="">Services
-                                                        </option>
-                                                        <option>Mechanical Engineering</option>
-                                                        <option>Petroleum Refinery</option>
-                                                        <option>Power &amp; Energy</option>
-                                                    </select>
-                                                </div>
-                                                <div class="fullwidth col col-lg-12 col-12">
-                                                    <textarea class="form-control" name="note" id="note" placeholder="Message..."></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="submit-area">
-                                                <button type="submit" class="theme-btn">Send
-                                                    Massege</button>
-                                                <div id="loader">
-                                                    <i class="ti-reload"></i>
-                                                </div>
-                                            </div>
-                                            <div class="clearfix error-handling-messages">
-                                                <div id="success">Thank you Massage Sended</div>
-                                                <div id="error"> Error occurred while sending email. Please
-                                                    try
-                                                    again
-                                                    later. </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('basicMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/2/2.5.jpg') }}" alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Combination sheet and tube laser cutting Equipment</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 20000w</h6>
+                            <p class="card-text">Features :Designed for challenging, dense materials and intricate jobs. The
+                                LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive,
+                                high-precision industrial demands.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('enclosedMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" class="card-img-top"
+                            alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Enclosed Protective Fiber Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 50000w</h6>
+                            <p class="card-text">Features: The LF-PE is engineered for smart, accurate tasks. It has an
+                                advanced CNC system for automatic operations. It's ideal for cutting a variety of metals,
+                                including carbon steel, stainless steel.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('exchangeMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/3\3.9.jpg') }}" class="card-img-top"
+                            alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Exchange Table Fiber Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 12000w</h6>
+                            <p class="card-text">Features: Boosts efficiency with its exchangeable worktable, minimizing
+                                idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting,
+                                suitable for high-volume and precision tasks.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('singleMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/3\3.8.jpg') }}" class="card-img-top"
+                            alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Single Bed Enclosed Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1000w, 1500w, 2000w, 3000w</h6>
+                            <p class="card-text">Features: 2023 launch, the LF-SE, designed for the European market, offers
+                                an enclosed, safe, and eco-friendly design. Easy to ship and install, it minimizes transport
+                                and setup costs. and metal furniture manufacturing industries.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 28rem;">
+                    <a href="{{ route('largeMetal') }}">
+                        <img src="{{ asset('Frontend/assets/images/3\3.11.jpg') }}" class="card-img-top"
+                            alt="Product Image 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Large Size Fiber Laser Cutting Machine</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser Power: 12000w, 20000w, 50000w</h6>
+                            <p class="card-text">Features: Efficient and precise large-format laser cutting machine, ideal
+                                for large-scale production processing. LF-L perfectly integrates comfortable and convenient
+                                operating space, safe product performance, interconnection experience.</p>
+                            <button type="submit" class="btn btn-primary">Read More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
         </div>
     </div>
-    <!-- wpo-service-single-area end -->
 @endsection

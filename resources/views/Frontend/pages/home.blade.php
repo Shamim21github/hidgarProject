@@ -242,7 +242,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-11.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-17.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
@@ -280,12 +280,12 @@
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-15.jpg') }}">
+                        <div class="slide-inner slide-bg-image" data-background="{{ asset ('Frontend/assets/images/slider/slide-16.jpg') }}">
                             <!-- <div class="gradient-overlay"></div> -->
                             <div class="container-fluid">
                                 <div class="slide-content">
                                     <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>We provide Mental Bending Equipment </h2>
+                                        <h2>We provide Metal Bending Equipment </h2>
                                     </div>
                                     <div data-swiper-parallax="400" class="slide-text">
                                         <p></p>
@@ -312,7 +312,7 @@
         <section class="wpo-about-section-s2 section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
+                    {{-- <div class="col-lg-6 col-12">
                         <div class="about-left-image">
                             <div class="ab-3">
                                 <img src="{{ asset ('Frontend/assets/images/ab-7.jpg') }}" alt="">
@@ -321,7 +321,19 @@
                                 <img src="{{ asset ('Frontend/assets/images/ab-6.jpg') }}" alt="">
                             </div>
                         </div>
+                    </div> --}}
+
+                    <div class="col-lg-6 col-12">
+                        <div class="">
+                            <div class="ab-3" style="width:1000px!important">
+                                <img src="{{ asset('Frontend/assets/images/about2.jpg') }}" alt="">
+                                {{-- <img src="{{ asset('Frontend/assets/images/ab-7.jpg') }}" alt=""> --}}
+                            </div>
+                        </div>
                     </div>
+                    
+
+
                     <div class="col-lg-6 col-12">
                         <div class="content">
                             <div class="text">
@@ -368,35 +380,43 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="service-card">
                             <div class="image">
-                                <img src="{{ asset ('Frontend/assets/images/service/5.jpg') }}" alt="">
+                                    <a href="{{ route('economicalMetal') }}">
+                                <img src="{{ asset ('Frontend/assets/images/service/10.jpg') }}" alt="">
                                 <span>01</span>
                                 <div class="line-one"></div>
                                 <div class="line-two"></div>
                             </div>
+                            
                             <div class="content">
-                                <div class="icon">
-                                    <img src="{{ asset ('Frontend/assets/images/service/icon-1.svg') }}" alt="">
+                                <div class="icon" >
+                                        <img src="{{ asset('Frontend/assets/images/laserMachine.jpg') }}" alt="">
+                                        {{-- <img src="{{ asset('Frontend/assets/images/service/icon-1.svg') }}" alt=""> --}}
+                                    
                                 </div>
-                                <h2><a href="{{ route('services') }}">Sheet & Tube Laser Cutting Machine</a></h2>
-                                <p>Finest Products 
-                                </p>
+                                <h2>
+                                    <a href="{{ route('services') }}">Sheet & Tube Laser Cutting Machine</a>
+                                </h2>
+                                <p>Finest Products</p>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="service-card">
                             <div class="image">
-                                <img src="{{ asset ('Frontend/assets/images/service/6.jpg') }}" alt="">
+                                <a href="{{ route('largeMetal') }}">
+                                <img src="{{ asset ('Frontend/assets/images/service/17.jpg') }}" alt="">
                                 <span>02</span>
                                 <div class="line-one"></div>
                                 <div class="line-two"></div>
                             </div>
                             <div class="content">
                                 <div class="icon">
-                                    <img src="{{ asset ('Frontend/assets/images/service/icon-2.svg') }}" alt="">
+                                    <img src="{{ asset('Frontend/assets/images/laserMachine.jpg') }}" alt="">
+                                    {{-- <img src="{{ asset ('Frontend/assets/images/service/icon-2.svg') }}" alt=""> --}}
                                 </div>
                                 <h2><a href="{{ route('services') }}">Fiber Laser Cutting Machine</a></h2>
-                                <p>Best Laser Cutting Machine is available.
+                                <p>Best Fiber Laser Cutting Machine is <br> available.
                                 </p>
                             </div>
                         </div>
@@ -404,17 +424,19 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="service-card">
                             <div class="image">
-                                <img src="{{ asset ('Frontend/assets/images/service/7.jpg') }}" alt="">
+                                <a href="{{ route('products6') }}">
+                                <img src="{{ asset ('Frontend/assets/images/service/11.jpg') }}" alt="">
                                 <span>03</span>
                                 <div class="line-one"></div>
                                 <div class="line-two"></div>
                             </div>
                             <div class="content">
                                 <div class="icon">
-                                    <img src="{{ asset ('Frontend/assets/images/service/icon-3.svg') }}" alt="">
+                                    <img src="{{ asset('Frontend/assets/images/laserMachine.jpg') }}" alt="">
+                                    {{-- <img src="{{ asset ('Frontend/assets/images/service/icon-3.svg') }}" alt=""> --}}
                                 </div>
-                                <h2><a href="{{ route('services') }}">Organic & Fiber Materials</a></h2>
-                                <p>We have both Organic & Fiber Materials 
+                                <h2><a href="{{ route('services') }}">Laser Welder</a></h2>
+                                <p>We have both Laser Welder & Laser Cutting machines.
                                 </p>
                             </div>
                         </div>
@@ -498,37 +520,45 @@
                 <div class="project-slider owl-carousel">
                     <div class="project-card">
                         <div class="image">
-                            <img src="{{ asset ('Frontend/assets/images/project/1.jpg') }}" alt="">
+                            <a href="{{ route('enclosedMetal') }}">
+                                <img src="{{ asset('Frontend/assets/images/project/8.jpg') }}" alt="Laser Cutting Machine">
+                            </a>
                         </div>
                         <div class="content">
-                            <h3><a href="{{ route('products') }}">Laser Cutting Machine</a></h3>
+                            <h3>
+                                <a href="{{ route('products1') }}">Laser Cutting Machine</a>
+                            </h3>
+                            <p></p>
+                        </div>
+                        
+                    </div>
+                    <div class="project-card">
+                        <div class="image">
+                            <a href="{{ route('singleMetal') }}">
+                            <img src="{{ asset ('Frontend/assets/images/project/7.jpg') }}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3><a href="{{ route('products1') }}">Single Bed</a></h3>
                             <p></p>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="image">
-                            <img src="{{ asset ('Frontend/assets/images/project/2.jpg') }}" alt="">
+                            <a href="{{ route('products2') }}">
+                            <img src="{{ asset ('Frontend/assets/images/project/6.jpg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h3><a href="{{ route('products') }}">Custom Fabrication</a></h3>
+                            <h3><a href="{{ route('products2') }}">Tube Laser Cutting Machine</a></h3>
                             <p></p>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="image">
-                            <img src="{{ asset ('Frontend/assets/images/project/3.jpg') }}" alt="">
+                            <a href="{{ route('products6') }}">
+                            <img src="{{ asset ('Frontend/assets/images/project/5.jpg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h3><a href="{{ route('products') }}">Welding Machine</a></h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="image">
-                            <img src="{{ asset ('Frontend/assets/images/project/4.jpg') }}" alt="">
-                        </div>
-                        <div class="content">
-                            <h3><a href="{{ route('products') }}">Heavy Equipment</a></h3>
+                            <h3><a href="{{ route('products6') }}">Handheld Laser Metal Cleaner</a></h3>
                             <p></p>
                         </div>
                     </div>
@@ -701,7 +731,7 @@
                                 <ul>
                                     <li><a href="{{ route('home') }}">Home</a></li>
                                     <li><a href="{{ route('about') }}">About Us</a></li>
-                                    <li><a href="{{ route('services') }}">Products</a></li>
+                                    <li><a href="{{ route('products') }}">Products</a></li>
                                     <li><a href="{{ route('services') }}">Service</a></li>
                                     {{-- <li><a href="blog.html">blog</a></li> --}}
                                     <li><a href="{{ route('contact') }}">Contact us</a></li>
