@@ -41,6 +41,8 @@ class ContactController extends Controller
         return redirect()->route('contact')->with('success', 'Thank you for your submission. A confirmation email has been sent to you.');
     }
 
+    
+
 
     public function show($id)
     {

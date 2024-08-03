@@ -25,6 +25,69 @@
         .card-body {
             padding: 1rem;
         }
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Add animation (zoom in the image) */
+        .modal-content,
+        #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The close button */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -33,32 +96,38 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">High Power Sheet Metal Laser Cutting Machine: Power Meets Precision</h1>
+                <h1 style="text-align: center;">Precision Meets Performance: Hidgar Fiber Laser Cutting Machine
+                </h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">20,000W laser machine that excels with metal. Engineered for detailed and dense metalwork, it's the precision choice for industrial needs.</h6>
+                <h6 style="text-align: center;">As a leading factory and manufacturer, we deliver top-tier exchange table fiber laser cutting machine, that enhance precision and productivity in metal fabrication.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
                     <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/1\basic2.jpg') }}" class="card-img-top"
-                            alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images\1\19.jpg') }}" class="card-img-top enlargeable"
+                            alt="Exchange Table Fiber Laser Cutting Machine">
                     </a>
                 </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption" class="text-center"></div>
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 28rem;">
                     <a href="#">
                         <div class="card-body">
-                            <h4 class="card-title">High Power Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.
+                            <h4 class="card-title">Exchange Table Fiber Laser Cutting Machine</h4>
+                            <p class="card-text">Features: Boosts efficiency with its exchangeable worktable, minimizing idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting, suitable for high-volume and precision tasks.
                                 </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 20000w</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 12000w</h6>
                             <div>
                                 <ul class="text-dark">
-                                    <li>High Power Performance</li>
-                                    <li>Save on Shipping Costs</li>
-                                    <li> Model Upgrade Flexibility</li>
+                                    <li>Efficient Exchange Platform</li>
+                                    <li>Cost-Effective High Value</li>
+                                    <li>Broad Material Compatibility</li>
                                 </ul>
                             </div> <br>
 
@@ -80,7 +149,7 @@
         </div>
     </div> <br>
     <div class="col-md-12">
-        <h4 class="text-center">Sheet Metal Laser Cutting Machine Technical Specifications</h4>
+        <h4 class="text-center">Exchange Table Fiber Laser Cut Technical Specifications</h4>
     </div>
     <div class="col-md-12 ">
         <table class="table table-bordered">
@@ -198,18 +267,38 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    </div>
-    </div>
-
-
-
-
     </body>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.querySelector('.enlargeable');
+            var modalImg = document.getElementById('img01');
+            var captionText = document.getElementById('caption');
+
+            img.onclick = function() {
+                modal.style.display = 'block';
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName('close')[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = 'none';
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        });
+    </script>
 @endsection

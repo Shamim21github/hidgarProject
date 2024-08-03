@@ -31,6 +31,7 @@ Route::get('/products', function () {
 })->name('products');
 
 /* Product Details Route Start */
+
 Route::get('/products-details01', function () {
     return view('Frontend.pages.product-details1');
 })->name('products1');
@@ -54,29 +55,35 @@ Route::get('/products-details05', function () {
 Route::get('/products-details06', function () {
     return view('Frontend.pages.product-details6');
 })->name('products6');
+
 /* Product Details Route end */
 
 
-// Single Product page details Route start
-
+//Laser Cutting Sheet Metal Product page  Route start
 Route::get('/economicalMetal', function () {
-    return view('Frontend.pages.economicalMetal');
+    return view('Frontend.pages.LaserCutting.economicalMetal');
 })->name('economicalMetal');
 Route::get('/basicMetal', function () {
-    return view('Frontend.pages.basicMetal');
+    return view('Frontend.pages.LaserCutting.basicMetal');
 })->name('basicMetal');
 Route::get('/encloseMetal', function () {
-    return view('Frontend.pages.enclosedMetal');
+    return view('Frontend.pages.LaserCutting.enclosedMetal');
 })->name('enclosedMetal');
 Route::get('/exchangeMetal', function () {
-    return view('Frontend.pages.exchangeMetal');
+    return view('Frontend.pages.LaserCutting.exchangeMetal');
 })->name('exchangeMetal');
 Route::get('/singleMetal', function () {
-    return view('Frontend.pages.singleMetal');
+    return view('Frontend.pages.LaserCutting.singleMetal');
 })->name('singleMetal');
 Route::get('/largeMetal', function () {
-    return view('Frontend.pages.largeMetal');
+    return view('Frontend.pages.LaserCutting.largeMetal');
 })->name('largeMetal');
+//Laser Cutting Sheet Metal Product page  Route end
+
+//Combination Sheet Metal Product page  Route Start
+
+//Combination Sheet Metal Product page  Route end
+
 
 
 

@@ -29,7 +29,7 @@
         <div class="service-slider owl-carousel col-lg-4 col-md-6 col-12">
             <div class=" service-card ">
                 <div class="image">
-                    <a href="{{ route('economicalMetal') }}">
+                    <a href="{{ route('products1') }}">
                         <img src="{{ asset ('Frontend/assets/images/service/10.jpg') }}" alt="">
                     <span>01</span>
                     <div class="line-one"></div>
@@ -45,7 +45,7 @@
             </div>
             <div class="item">
                 <div class="image">
-                    <a href="{{ route('largeMetal') }}">
+                    <a href="{{ route('products2') }}">
                         <img src="{{ asset ('Frontend/assets/images/service/17.jpg') }}" alt="">
                     <span>02</span>
                     <div class="line-one"></div>
@@ -87,7 +87,7 @@
                     <div class="icon">
                         <img src="{{ asset('Frontend/assets/images/service/icon-4.svg')}}" alt="">
                     </div>
-                    <h2><a href="{{ route('services') }}">Pipe Bending Machhines</a></h2>
+                    <h2><a href="{{ route('services') }}">Pipe Bending Machine</a></h2>
                     <p></p>
                 </div>
             </div>
