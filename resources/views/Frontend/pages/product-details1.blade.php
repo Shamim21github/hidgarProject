@@ -57,7 +57,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
                     <a href="{{ route('exchangeMetal') }}">
-                        <img src="{{ asset('Frontend/assets/images/1\19.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images/1\18.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Exchange Table Fiber Laser Cutting  Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 12000w</h6>

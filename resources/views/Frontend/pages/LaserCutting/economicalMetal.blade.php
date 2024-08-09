@@ -91,10 +91,29 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* optional: for better readability */
+            padding: 10px;
+            /* optional: for better readability */
+            border-radius: 5px;
+            /* optional: for a nicer look */
+        }
+
+        .card-img-top {
+            width: 100%;
+        }
     </style>
-
-
-
 
     <div class="container-fluid">
         <div class="row">
@@ -138,9 +157,9 @@
                             <div>
 
 
-                            </div> <br> <br>
+                            </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-                            <button type="submit" class="btn btn-primary">Order Now</button>
+                            {{-- <button type="submit" class="btn btn-primary">Order Now</button> --}}
                         </div>
                     </a>
                 </div>
@@ -154,25 +173,25 @@
                         <tr>
                             <th scope="col">Mode</th>
                             <th scope="col">LF-3015B</th>
-                            <th scope="col">LF-6015B</th>
+                            {{-- <th scope="col">LF-6015B</th>
                             <th scope="col">LF-4020B</th>
-                            <th scope="col">LF-6025B</th>
+                            <th scope="col">LF-6025B</th> --}}
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">Working Area</th>
                             <td>3000*1500mm</td>
-                            <td>6000*1500mm</td>
+                            {{-- <td>6000*1500mm</td>
                             <td>4000*2000mm</td>
-                            <td>6000*2500mm</td>
+                            <td>6000*2500mm</td> --}}
                         </tr>
                         <tr>
                             <th scope="row">X Y Z Axis Stroke</th>
                             <td>1520*3100*100mm</td>
-                            <td>1520*6050*100mm</td>
-                            <td>2040*4050*100mm</td>
-                            <td>2510*6100*260mm</td>
+                            {{-- <td>1520*6050*100mm</td> --}}
+                            {{-- <td>2040*4050*100mm</td>
+                            <td>2510*6100*260mm</td> --}}
                         </tr>
                         <tr>
                             <th scope="row">Laser Power Supply</th>
@@ -204,82 +223,214 @@
             </div>
 
             <div class="col-md-12">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="{{ asset('Frontend/assets/images/machine.png') }}" alt="Sheet Metal" class="card-img-top"
+                            style="width:80%">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h4>LF-EA's Flexible Component Options</h4>
+                        <p>Choose from a range of laser source, control system, and laser cut head for a machine that's
+                            tailored just for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
                 <h4 class="text-center">Sheet Metal Laser Cutting Machine Features</h4 class="text-center">
             </div>
 
+            
 
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Cast Aluminum Beam</h5>
-                        <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                        <p class="card-text">Our beam is made from high-grade aluminum. This material is chosen for its
-                            strength. It
-                            ensures swift and agile cutting motions. Precision is maintained.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Cast Aluminum Beam</h5>
+                                <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal"
+                                    class="card-img-top" style="width:80%">
+                                <p class="card-text">Our beam is made from high-grade aluminum. This material is chosen for
+                                    its
+                                    strength. It
+                                    ensures swift and agile cutting motions. Precision is maintained.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Laser Cutting Head</h5>
-                        <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal" class="card-img-top">
-                        <p class="card-text">The laser cutting head on our machine is state-of-the-art. It consistently
-                            produces
-                            precise cuts. It's versatile across different materials. Optimal performance is a guarantee.</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Laser Cutting Head</h5>
+                                <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal"
+                                    class="card-img-top" style="width:60% ">
+                                <p class="card-text">The laser cutting head on our machine is state-of-the-art. </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Hollow Steel Structure</h5>
-                        <img src="{{ asset('Frontend/assets/images/hollow.png') }}" alt="Sheet Metal" class="card-img-top">
-                        <p class="card-text">Wireless handheld operation for ease and sensitivity. Perfectly compatible with
-                            the
-                            latest CNC system software and hardware.</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Hollow Steel Structure</h5>
+                                <img src="{{ asset('Frontend/assets/images/hollow.png') }}" alt="Sheet Metal"
+                                    class="card-img-top" style="width:70%">
+                                <p class="card-text">Wireless handheld operation for ease and sensitivity. Perfectly
+                                    compatible with
+                                    the
+                                    latest CNC system software and hardware.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Intelligent Operating System</h5>
-                        <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                        <p class="card-text">CNC system is cutting-edge. Its 32-inch touch screen improve user experience.
-                            Dynamic
-                            adjustments make it over 60% quicker than traditional systems.
-                        </p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Wireless</h5>
+                                <img src="{{ asset('Frontend/assets/images/wireless.png') }}" alt="Sheet Metal"
+                                    class="card-img-top">
+                                <p class="card-text">CNC system is cutting-edge. Its 32-inch touch screen improve user
+                                    experience.
+                                    Dynamic
+                                    adjustments make it over 60% quicker than traditional systems.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Electrical Cabinet</h5>
-                        <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal" class="card-img-top">
-                        <p class="card-text">The electrical cabinet is designed for optimal power management. It ensures
-                            that power
-                            distribution is efficient. The operation of the machine remains reliable and safe at all times.
-                        </p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Intelligent Operating System</h5>
+                                <img src="{{ asset('Frontend/assets/images/touch.png') }}" alt="Sheet Metal"
+                                    class="card-img-top">
+                                <p class="card-text">The electrical cabinet is designed for optimal power management. It
+                                    ensures
+                                    that power
+                                    distribution is efficient. The operation of the machine remains reliable and safe at all
+                                    times.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Chiller Unit</h5>
-                        <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal" class="card-img-top">
-                        <p class="card-text">A chiller unit is included to regulate the laser's temperature. Consistent
-                            performance
-                            is maintained. It also extends the lifespan of the machine. Dependability is enhanced.
-                        </p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Chiller Unit</h5>
+                                <img src="{{ asset('Frontend/assets/images/generator.png') }}" alt="Sheet Metal"
+                                    class="card-img-top">
+                                <p class="card-text">A chiller unit is included to regulate the laser's temperature.
+                                    Consistent
+                                    performance
+                                    is maintained. It also extends the lifespan of the machine. Dependability is enhanced.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div class="col-md-12">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="{{ asset('Frontend/assets/images/graph.png') }}" alt="Sheet Metal" class="card-img-top"
+                            style="width:80%">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h4> Metal Fiber Laser Cutting Machine: Key Parameters</h4>
+                        <p> Metal Fiber Laser Cutting Machine: Key Parameters</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+<br> <br> <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Fiber Laser Cutting Machine Sample & Applications</h4>
+            </div>
+        </div> 
+    </div>
+
+    <br> <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/01.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
+                    <p>Laser cut carbon steel</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/02.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
+                    <p>Laser cut carbon steel</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/03.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
+                    <p>Laser cut brass</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/04.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
+                    <p>Laser cut stainless steel</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/05.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
+                    <p>Laser cutting metal</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/06.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
+                    <p>Laser cut aluminum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <br> <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 position-relative text-center mb-3">
+                <img src="{{ asset('Frontend/assets/images/car.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <h4 class="overlay-text">Automotive manufacturing</h4>
+            </div> 
+            <div class="col-md-4 position-relative text-center">
+                <img src="{{ asset('Frontend/assets/images/plane.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <h4 class="overlay-text">Aerospace</h4>
+            </div>
+            <div class="col-md-4 position-relative text-center">
+                <img src="{{ asset('Frontend/assets/images/ship.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <h4 class="overlay-text">Shipbuilding industry</h4>
+            </div>
+            <div class="col-md-4 position-relative text-center">
+                <img src="{{ asset('Frontend/assets/images/agriculture.png') }}" alt="Sheet Metal"
+                    class="card-img-top w-100">
+                <h4 class="overlay-text">Agricultural machinery</h4>
+            </div>
+            <div class="col-md-4 position-relative text-center">
+                <img src="{{ asset('Frontend/assets/images/architecutre.png') }}" alt="Sheet Metal"
+                    class="card-img-top w-100">
+                <h4 class="overlay-text">Achitechive</h4>
+            </div>
+            <div class="col-md-4 position-relative text-center">
+                <img src="{{ asset('Frontend/assets/images/rail.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <h4 class="overlay-text">Rail transport</h4>
+            </div>
+        </div>
+    </div>
+    <br> <br>
+
 
     </body>
     </div>

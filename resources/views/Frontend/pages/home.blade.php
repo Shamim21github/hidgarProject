@@ -80,10 +80,10 @@
                                             <option value="">France</option>
                                         </select>
                                     </li> --}}
-                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    {{-- <li><a href="#"><i class="ti-facebook"></i></a></li>
                                     <li><a href="#"><i class="ti-instagram"></i></a></li>
                                     <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="ti-linkedin"></i></a></li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
                     <div class="col-lg-6 col-12">
                         <div class="">
                             <div class="ab-3" style="width:1000px!important">
-                                <img src="{{ asset('Frontend/assets/images/about2.jpg') }}" alt="" class="enlargeable">
+                                <img src="{{ asset('Frontend/assets/images/about.jpg') }}" alt="" class="enlargeable" width="50%">
                             </div>
                         </div>
                     </div>

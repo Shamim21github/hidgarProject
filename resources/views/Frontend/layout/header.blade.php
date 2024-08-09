@@ -73,10 +73,10 @@
                                     <option value="">France</option>
                                 </select>
                             </li> --}}
-                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            {{-- <li><a href="#"><i class="ti-facebook"></i></a></li>
                             <li><a href="#"><i class="ti-instagram"></i></a></li>
                             <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>
