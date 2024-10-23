@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('economicalMetal') }}">
+                    <a href="{{ route('HandheldLaserMetal') }}">
                         <img src="{{ asset('Frontend/assets/images/3\3.11.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title"> Handheld Laser Metal Cleaner </h4>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('largeMetal') }}">
+                    <a href="{{ route('suitcaseMetal') }}">
                         <img src="{{ asset('Frontend/assets/images/3\3.12.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Suitcase Laser Cleaning Machine</h4>
@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="#">
+                    <a href="{{ route('backpackPulse') }}">
                         <img src="{{ asset('Frontend/assets/images/3\3.4.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Backpack Pulse Laser Cleaning Machine</h4>

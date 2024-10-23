@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('economicalMetal') }}">
+                    <a href="{{ route('standardTube') }}">
                         <img src="{{ asset('Frontend/assets/images/1\2.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Standard</h4>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('largeMetal') }}">
+                    <a href="{{ route('exchangeTube') }}">
                         <img src="{{ asset('Frontend/assets/images/1\5.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Exchange</h4>
@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="#">
+                    <a href="{{ route('enclosedTube') }}">
                         <img src="{{ asset('Frontend/assets/images/1\18.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Enclosed</h4>

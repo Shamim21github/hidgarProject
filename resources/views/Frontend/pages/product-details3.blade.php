@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('economicalMetal') }}">
+                    <a href="{{ route('HandheldLaser') }}">
                         <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Handheld Laser Welding Machine</h4>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('largeMetal') }}">
+                    <a href="{{ route('HandheldMetal') }}">
                         <img src="{{ asset('Frontend/assets/images/laserWelder02.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Handheld Metal Laser Welder</h4>
@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="#">
+                    <a href="{{ route('automaticLaser') }}">
                         <img src="{{ asset('Frontend/assets/images/laserWelder03.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Automatic Laser Welding Machine</h4>

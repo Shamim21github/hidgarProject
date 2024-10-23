@@ -81,8 +81,65 @@ Route::get('/largeMetal', function () {
 //Laser Cutting Sheet Metal Product page  Route end
 
 //Combination Sheet Metal Product page  Route Start
-
+Route::get('/standardTube', function () {
+    return view('Frontend.pages.CombinationSheet.standardTube');
+})->name('standardTube');
+Route::get('/exchangeTube', function () {
+    return view('Frontend.pages.CombinationSheet.exchangeTube');
+})->name('exchangeTube');
+Route::get('/encloseTube', function () {
+    return view('Frontend.pages.CombinationSheet.enclosedTube');
+})->name('enclosedTube');
 //Combination Sheet Metal Product page  Route end
+
+//Laser Welding Product page  Route Start
+Route::get('/HandheldLaser', function () {
+    return view('Frontend.pages.LaserWelding.HandheldLaser');
+})->name('HandheldLaser');
+Route::get('/HandheldMetal', function () {
+    return view('Frontend.pages.LaserWelding.HandheldMetal');
+})->name('HandheldMetal');
+Route::get('automaticLaser', function () {
+    return view('Frontend.pages.LaserWelding.automaticLaser');
+})->name('automaticLaser');
+//Laser Welding Product page  Route end
+
+//Metal Bending Product page  Route Start
+Route::get('/pressBrake', function () {
+    return view('Frontend.pages.MetalBending.pressBrake');
+})->name('pressBrake');
+Route::get('/pipeBending', function () {
+    return view('Frontend.pages.MetalBending.pipeBending');
+})->name('pipeBending');
+Route::get('automaticLaserWelding', function () {
+    return view('Frontend.pages.MetalBending.automaticLaserWelding');
+})->name('automaticLaserWelding');
+//Metal Bending Product page  Route Start
+
+//Pipe Bending Product page  Route Start
+// Route::get('/standardTube', function () {
+//     return view('Frontend.pages.PipeBending.standardTube');
+// })->name('standardTube');
+// Route::get('/basicMetal', function () {
+//     return view('Frontend.pages.PipeBending.basicMetal');
+// })->name('basicMetal');
+// Route::get('/encloseMetal', function () {
+//     return view('Frontend.pages.PipeBending.enclosedMetal');
+// })->name('enclosedMetal');
+//Pipe Bending Product page  Route Start
+
+//Laser Cleaning Product page  Route Start
+Route::get('/HandheldLaserMetal', function () {
+    return view('Frontend.pages.Lasercleaning.HandheldLaserMetal');
+})->name('HandheldLaserMetal');
+Route::get('/suitcaseMetal', function () {
+    return view('Frontend.pages.Lasercleaning.suitcaseMetal');
+})->name('suitcaseMetal');
+Route::get('backpackPulse', function () {
+    return view('Frontend.pages.Lasercleaning.backpackPulse');
+})->name('backpackPulse');
+//Laser Cleaning Product page  Route Start
+
 
 
 
