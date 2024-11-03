@@ -126,7 +126,7 @@
             <div class="col-md-6 mb-4">
                 <div class="card" style="width: 100%;">
                     <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" class="card-img-top enlargeable"
+                        <img src="{{ asset('Frontend/assets/images/3\3.9.jpg') }}" class="card-img-top enlargeable"
                             alt="Economical Fiber Laser Cutting Machine">
                     </a>
                 </div>
@@ -154,7 +154,7 @@
                             <div>
 
 
-                            </div> <br> <br> <br> 
+                            </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
 
                             {{-- <button type="submit" class="btn btn-primary">Order Now</button> --}}
                         </div>

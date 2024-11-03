@@ -530,6 +530,15 @@ img {
   flex-direction: column;
   z-index: 1;
 }
+.wpo-breadcumb-area2 {
+  background: url(../images/factoryimages.png) no-repeat center top/cover;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
 @media (max-width: 767px) {
   .wpo-breadcumb-area {
     min-height: 250px;

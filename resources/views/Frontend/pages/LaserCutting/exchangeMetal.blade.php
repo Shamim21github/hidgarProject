@@ -16,62 +16,68 @@
         }
 
         .card {
-            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .card img {
-            width: 100%;
+
+        .card-img-top {
+            width: 70%;
             height: auto;
+            border-radius: 8px;
         }
-        .card-body {
-            padding: 1rem;
+
+        .image-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
         }
+
+        .image-thumbnails img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .image-thumbnails img:hover {
+            transform: scale(1.1);
+        }
+
         .modal {
             display: none;
-            /* Hidden by default */
             position: fixed;
-            /* Stay in place */
             z-index: 1000;
-            /* Sit on top */
             left: 0;
             top: 0;
             width: 100%;
-            /* Full width */
             height: 100%;
-            /* Full height */
             overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
             background-color: rgba(0, 0, 0, 0.9);
-            /* Black w/ opacity */
         }
 
-        /* Modal content (image) */
         .modal-content {
             margin: auto;
             display: block;
             width: 80%;
             max-width: 700px;
-        }
-
-        /* Add animation (zoom in the image) */
-        .modal-content,
-        #caption {
-            animation-name: zoom;
-            animation-duration: 0.6s;
+            animation: zoom 0.6s;
         }
 
         @keyframes zoom {
             from {
-                transform: scale(0)
+                transform: scale(0);
             }
 
             to {
-                transform: scale(1)
+                transform: scale(1);
             }
         }
 
-        /* The close button */
         .close {
             position: absolute;
             top: 20px;
@@ -79,36 +85,24 @@
             color: #f1f1f1;
             font-size: 40px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
             cursor: pointer;
         }
 
-        .position-relative {
-            position: relative;
+        .close:hover {
+            color: #bbb;
         }
 
-        .overlay-text {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* optional: for better readability */
-            padding: 10px;
-            /* optional: for better readability */
-            border-radius: 5px;
-            /* optional: for a nicer look */
+        ul.text-dark li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
         }
 
-        .card-img-top {
-            width: 100%;
+        ul.text-dark li i {
+            color: #007bff;
+            /* Icon color */
+            font-size: 1.2em;
         }
     </style>
 
@@ -118,55 +112,65 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">Precision Meets Performance: Hidgar Fiber Laser Cutting Machine
-                </h1>
+                <h1 style="text-align: center;">Precision Meets Performance: Hidgar Fiber Laser Cutting Machine</h1>
             </div>
             <div class="col-md-12">
                 <h6 style="text-align: center;">As a leading factory and manufacturer, we deliver top-tier exchange table fiber laser cutting machine, that enhance precision and productivity in metal fabrication.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
-                <div class="card" style="width: 100%;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images\1\18.jpg') }}" class="card-img-top enlargeable"
-                            alt="Exchange Table Fiber Laser Cutting Machine">
+                <div class="card position-relative" style="width: 100%; text-align: center;">
+                    <a href="#" onclick="openModal('{{ asset('Frontend/assets/images/1/9.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/exchange/1.jpg') }}" class="card-img-top enlargeable"
+                            alt="Standard Power Fiber Laser Cutting Machine">
                     </a>
+
+                    <div class="image-thumbnails">
+                        <img src="{{ asset('Frontend/assets/images/exchange/2.jpg') }}" alt="Thumbnail 1"
+                            onclick="openModal('{{ asset('Frontend/assets/images/exchange/2.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/exchange/1.jpg') }}" alt="Thumbnail 2"
+                            onclick="openModal('{{ asset('Frontend/assets/images/exchange/1.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/exchange/3.jpg') }}" alt="Thumbnail 3"
+                            onclick="openModal('{{ asset('Frontend/assets/images/exchange/3.jpg') }}')">
+                    </div>
                 </div>
             </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body"> <br> <br>
+                        <h4 class="card-title text-center">Exchange Table Fiber Laser Cutting Machine</h4> <br>
+                        <p class="card-subtitle mb-2 text-muted">Features: Boosts efficiency with its exchangeable worktable, minimizing idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting, suitable for high-volume and precision tasks.</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 12000w</h6>
+
+                        <div>
+                            <ul class="text-dark">
+                                <li><i class="fas fa-check-circle"></i>Efficient Exchange Platform</li>
+                                <li><i class="fas fa-check-circle"></i>Cost-Effective High Value</li>
+                                <li><i class="fas fa-check-circle"></i>Broad Material Compatibility</li>
+                            </ul>
+                        </div> <br>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary btn-md">
+                                <a style="color:white; text-decoration: none;" href="{{ route('contact') }}">Get a quote</a>
+                            </button>
+                        </div>
+                        <br> <br> <br> <br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
                 <img class="modal-content" id="img01">
                 <div id="caption" class="text-center"></div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card" style="width: 28rem;">
-                    <a href="#">
-                        <div class="card-body">
-                            <h4 class="card-title">Exchange Table Fiber Laser Cutting Machine</h4>
-                            <p class="card-text">Features: Boosts efficiency with its exchangeable worktable, minimizing idle time. The LF-EX enhances productivity by allowing loading and unloading during cutting, suitable for high-volume and precision tasks.
-                                </p>
-                            <h6 class="card-subtitle mb-2 text-muted">Laser power：2000w - 12000w</h6>
-                            <div>
-                                <ul class="text-dark">
-                                    <li>Efficient Exchange Platform</li>
-                                    <li>Cost-Effective High Value</li>
-                                    <li>Broad Material Compatibility</li>
-                                </ul>
-                            </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-
-                            <div>
-
-                                {{-- <ul class="rounded-box">
-                                    <i class="ti-facebook"></i>
-                    </a></li>
-                    <i class="ti-instagram"></i></a></li>
-                    <i class="ti-twitter-alt"></i></a></li>
-                    <i class="ti-linkedin"></i></a></li>
-                    </ul> --}}
-
-                </div>
-
-                {{-- <button type="submit" class="btn btn-primary">Order Now</button> --}}
-            </div>
+           
             </a>
         </div>
     </div> <br>
@@ -325,8 +329,8 @@
                 <div class="flex-shrink-0">
                     <img src="{{ asset('Frontend/assets/images/basicGraph.png') }}" alt="Sheet Metal" class="card-img-top" style="width:80%">
                 </div>
-                <div class="flex-grow-1 ms-3 col-6">
-                    <h4> Metal Fiber Laser Cutting Machine:</h4>
+                <div class="flex-grow-1 ms-3 col-6" style="margin-left: -10rem !important;">
+                    <h4> Fiber Laser Cutting Machine: Key Parameters:</h4>
                     <p> Master every metal challenge with Leapion's fiber laser cutting machine with exchange table. From stainless steel to titanium, achieve precise, clean cuts. Explore the versatility and power of our machines.</p>
                 </div>
             </div>
@@ -337,6 +341,8 @@
     </div>
     </div>
     <br> <br>
+
+
 
     <div class="container">
         <div class="row">

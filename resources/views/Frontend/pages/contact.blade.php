@@ -50,9 +50,13 @@
                             <div>
                                 <select name="service" class="form-control" required>
                                     <option disabled="disabled" selected="">Services</option>
-                                    <option>Mechanical Engineering</option>
-                                    <option>Petroleum Refinery</option>
-                                    <option>Power &amp; Energy</option>
+                                    <option>Fiber Laser Cutting Machine</option>
+                                    <option>Combination Sheet & Tube Laser Cutting Machine</option>
+                                    <option>Laser Welding Equipment</option>
+                                    <option>Laser Welding Equipment</option>
+                                    <option>Metal Bending Equipment</option>
+                                    <option>Pipe Bending Equipment</option>
+                                    <option>Laser Cleaning Equipment</option>
                                 </select>
                             </div>
                             <div class="fullwidth">

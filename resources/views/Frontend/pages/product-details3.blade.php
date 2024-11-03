@@ -8,7 +8,7 @@
                 <h1 style="text-align: center;">Laser Welding Equipment</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">Hidgar's Laser Welding machines blend top efficiency with precision.</h6>
+                <h6 style="text-align: center;">Revolutionize Your Cleaning Process with Advanced Laser Rust Removal</h6>
             </div> <br> <br> <br>
 
             <div class="col-md-12 mt-3" style="text-align: center;color:white">

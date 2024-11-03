@@ -20,7 +20,7 @@
                     <a href="{{ route('economicalMetal') }}">
                         <img src="{{ asset('Frontend/assets/images/1\9.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
-                            <h4 class="card-title">Economical Fiber Laser Cutting Machine</h4>
+                            <h4 class="card-title">Standard Power Fiber Laser Cutting Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
                             <p class="card-text">Features: A cost-effective and accurate fiber laser cutter, perfect for small production settings. The LF-EA features easy controls design, reducing both operation time and upkeep expenses.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>
@@ -33,7 +33,7 @@
                     <a href="{{ route('basicMetal') }}">
                         <img src="{{ asset('Frontend/assets/images/1\basic2.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
-                            <h4 class="card-title">Basic High Power Fiber Laser Cutting Machine</h4>
+                            <h4 class="card-title"> High Power Fiber Laser Cutting Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 20000w</h6>
                             <p class="card-text">Features :Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>

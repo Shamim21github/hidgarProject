@@ -9,7 +9,9 @@ use App\Http\Controllers\ContactController;
 
 
 
+use App\Http\Controllers\LanguageController; // Make sure this points to the correct namespace
 
+Route::get('lang/{locale}', [LanguageController::class, 'switchLang'])->name('lang.switch');
 
 
 
