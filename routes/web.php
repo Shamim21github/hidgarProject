@@ -42,6 +42,10 @@ Route::get('/products-details02', function () {
     return view('Frontend.pages.product-details2');
 })->name('products2');
 
+// Route::get('/products-details02.1', function () {
+//     return view('Frontend.pages.product-details2.1');
+// })->name('products2');
+
 Route::get('/products-details03', function () {
     return view('Frontend.pages.product-details3');
 })->name('products3');
@@ -81,6 +85,27 @@ Route::get('/largeMetal', function () {
     return view('Frontend.pages.LaserCutting.largeMetal');
 })->name('largeMetal');
 //Laser Cutting Sheet Metal Product page  Route end
+
+
+//Tube Cutting Sheet Metal Product page  Route Start
+Route::get('/miniTubecutting', function () {
+    return view('Frontend.pages.TubeCutting.mini');
+})->name('miniTube');
+Route::get('/standardTubeCutting', function () {
+    return view('Frontend.pages.TubeCutting.standard');
+})->name('standardTubeCutting');
+Route::get('/threeChuckTube', function () {
+    return view('Frontend.pages.TubeCutting.threeChuck');
+})->name('threeChuckTube');
+Route::get('/autoLoadingTube', function () {
+    return view('Frontend.pages.TubeCutting.AutoLoading');
+})->name('autoLoadingTube');
+Route::get('/suspensionTubecutting', function () {
+    return view('Frontend.pages.TubeCutting.Suspension');
+})->name('suspensionTube');
+
+//Tube Cutting Sheet Metal Product page  Route End
+
 
 //Combination Sheet Metal Product page  Route Start
 Route::get('/standardTube', function () {
