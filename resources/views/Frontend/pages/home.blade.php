@@ -183,7 +183,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="{{ route('products2') }}">Combined Fiber Laser for Metal Sheet & Tube Cutting</a>
+                                                    <a href="{{ route('products20') }}">Combined Fiber Laser for Metal Sheet & Tube Cutting</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="#">Standard </a></li>
                                                         <li><a href="#">Exchange Table </a></li>

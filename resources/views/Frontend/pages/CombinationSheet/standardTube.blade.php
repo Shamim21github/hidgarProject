@@ -16,65 +16,68 @@
         }
 
         .card {
-            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .card img {
-            width: 100%;
+        .card-img-top {
+            width: 70%;
             height: auto;
+            border-radius: 8px;
         }
 
-        .card-body {
-            padding: 1rem;
+        .image-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .image-thumbnails img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .image-thumbnails img:hover {
+            transform: scale(1.1);
         }
 
         .modal {
             display: none;
-            /* Hidden by default */
             position: fixed;
-            /* Stay in place */
             z-index: 1000;
-            /* Sit on top */
             left: 0;
             top: 0;
             width: 100%;
-            /* Full width */
             height: 100%;
-            /* Full height */
             overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
             background-color: rgba(0, 0, 0, 0.9);
-            /* Black w/ opacity */
         }
 
-        /* Modal content (image) */
         .modal-content {
             margin: auto;
             display: block;
             width: 80%;
             max-width: 700px;
-        }
-
-        /* Add animation (zoom in the image) */
-        .modal-content,
-        #caption {
-            animation-name: zoom;
-            animation-duration: 0.6s;
+            animation: zoom 0.6s;
         }
 
         @keyframes zoom {
             from {
-                transform: scale(0)
+                transform: scale(0);
             }
 
             to {
-                transform: scale(1)
+                transform: scale(1);
             }
         }
 
-        /* The close button */
         .close {
             position: absolute;
             top: 20px;
@@ -82,38 +85,29 @@
             color: #f1f1f1;
             font-size: 40px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
             cursor: pointer;
         }
 
-        .position-relative {
-            position: relative;
+        .close:hover {
+            color: #bbb;
         }
 
-        .overlay-text {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* optional: for better readability */
-            padding: 10px;
-            /* optional: for better readability */
-            border-radius: 5px;
-            /* optional: for a nicer look */
+        ul.text-dark li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
         }
 
-        .card-img-top {
-            width: 100%;
+        ul.text-dark li i {
+            color: #007bff;
+            /* Icon color */
+            font-size: 1.2em;
         }
     </style>
+
+
+
 
     <div class="container-fluid">
         <div class="row">
@@ -121,14 +115,47 @@
                 <h1 style="text-align: center;">Dual-Use Sheet Tube Fiber Laser Cutting Machine</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">Specializing in advanced controls are user-friendly, making it easy to learn and maintain with less downtime.</h6>
+                <h6 style="text-align: center;"> Machine cuts very fast and accurately, making work quicker and reducing material waste.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
-                <div class="card" style="width: 100%;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/1\2.jpg') }}" class="card-img-top enlargeable"
-                            alt="Economical Fiber Laser Cutting Machine">
+                <div class="card position-relative" style="width: 100%; text-align: center;">
+                    <a href="#" onclick="openModal('{{ asset('Frontend/assets/images/EnclosedCombination/2.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/EnclosedCombination/2.jpg') }}" class="card-img-top enlargeable"
+                            alt="Standard Power Fiber Laser Cutting Machine" style="width:600px;height:430px">
                     </a>
+
+                    <div class="image-thumbnails ">
+                        <img src="{{ asset('Frontend/assets/images/EnclosedCombination/1.jpg') }}" alt="Thumbnail 1"
+                            onclick="openModal('{{ asset('Frontend/assets/images/EnclosedCombination/1.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/EnclosedCombination/3.jpg') }}" alt="Thumbnail 2"
+                            onclick="openModal('{{ asset('Frontend/assets/images/EnclosedCombination/3.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/EnclosedCombination/2.jpg') }}" alt="Thumbnail 3"
+                            onclick="openModal('{{ asset('Frontend/assets/images/EnclosedCombination/2.jpg') }}')">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body"> <br> <br>
+                        <h4 class="card-title text-center">Sheet Tube Fiber Laser Cutting Machine</h4> <br>
+                        <p class="card-subtitle mb-2 text-muted">Features:It can handle both sheet and tube materials, saving space and money on extra machines. The laser provides clean cuts with smooth edges, minimizing the need for further processing.
+                           </p>
+
+                        <div>
+                            <ul class="text-dark">
+                                <li><i class="fas fa-check-circle"></i> User Friendly</li>
+                                <li><i class="fas fa-check-circle"></i> clean cuts with smooth edges</li>
+                                <li><i class="fas fa-check-circle"></i>Supports cutting of different diameters pipes</li>
+                            </ul>
+                        </div> <br>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary btn-md">
+                                <a style="color:white; text-decoration: none;" href="{{ route('contact') }}">Get a quote</a>
+                            </button>
+                        </div> <br> <br>
+                        <br> <br> <br> <br>
+                    </div>
                 </div>
             </div>
             <div id="myModal" class="modal">
@@ -136,298 +163,240 @@
                 <img class="modal-content" id="img01">
                 <div id="caption" class="text-center"></div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card" style="width: 28rem;">
-                    <a href="#">
-                        <div class="card-body">
-                            <h4 class="card-title" >Dual-Use Sheet Tube Fiber Laser Cutting Machine</h4>
-                            <p class="card-text" style="text-align: left">Features: <br>  High Efficiency and Precision: The machine cuts very fast and accurately, making work quicker and reducing material waste. <br> Excellent Cut Quality: The laser provides clean cuts with smooth edges, minimizing the need for further processing.</p>
-                            <h6 class="card-subtitle mb-2 text-muted"style="text-align: left">Laser Power: 1500W, 2000W</h6>
-                            <div>
-                                <ul class="text-dark" style="text-align: left">
-                                    <li>High-precision clamping for precise cutting.</li>
-                                    <li>Efficient operation, quick response, and improved production efficiency.</li>
-                                    <li>The performance is stable and reliable, ensuring durability and reducing maintenance costs.</li>
-                                    <li>It has strong adaptability to various pipe materials and meets diverse cutting needs.</li>
-                                </ul>
-                            </div> <br>
+            </a>
+        </div>
+    </div> <br>
 
-                            <div>
-
-
-                            </div> <br> <br> <br> 
-
-                            {{-- <button type="submit" class="btn btn-primary">Order Now</button> --}}
-                        </div>
-                    </a>
+    <h4 class="card-title text-center">Double Fully-Automatic Pneumatic Chucks</h4>
+    <div class="container my-4">
+        <div class="card shadow-lg border-0">
+            <div class="row no-gutters">
+                <!-- Left Column with Image -->
+                <div class="col-md-4">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom1.png') }}" alt="CNC Laser Pipe Cutting" class="img-fluid rounded-left" style="height: 100%; width:100%;">
                 </div>
-            </div> <br>
-            <div class="col-md-12">
-                <h4 class="text-center">Sheet Metal Laser Cutting Machine Technical Specifications</h4>
-            </div>
-            <div class="col-md-12 ">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Mode</th>
-                            <th scope="col">LF-3015B</th>
-                            {{-- <th scope="col">LF-6015B</th>
-                            <th scope="col">LF-4020B</th>
-                            <th scope="col">LF-6025B</th> --}}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Working Area</th>
-                            <td>3000*1500mm</td>
-                            {{-- <td>6000*1500mm</td>
-                            <td>4000*2000mm</td>
-                            <td>6000*2500mm</td> --}}
-                        </tr>
-                        <tr>
-                            <th scope="row">X Y Z Axis Stroke</th>
-                            <td>1520*3100*100mm</td>
-                            {{-- <td>1520*6050*100mm</td> --}}
-                            {{-- <td>2040*4050*100mm</td>
-                            <td>2510*6100*260mm</td> --}}
-                        </tr>
-                        <tr>
-                            <th scope="row">Laser Power Supply</th>
-                            <td colspan="4">2000w, 3000w, 6000w, 12000w, 20000w</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Maximum Acceleration</th>
-                            <td colspan="4">2G</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Positioning Accuracy</th>
-                            <td colspan="4">±0.03mm</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Voltage</th>
-                            <td colspan="4">380V 3PH 50/60HZ</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Cutting Ability</th>
-                            <td colspan="4">Carbon Steel: 1-80mm, Stainless Steel: 1-70mm, Aluminum: 1-60mm, Brass:
-                                1-20mm</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Upgrade</th>
-                            <td colspan="4">Air Conditioner, Smoke Purifier, Air Compressor, Voltage Regulator</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="col-md-12">
-                <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                        <img src="{{ asset('Frontend/assets/images/machine.png') }}" alt="Sheet Metal" class="card-img-top"
-                            style="width:80%">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <h4>LF-EA's Flexible Component Options</h4>
-                        <p>Choose from a range of laser source, control system, and laser cut head for a machine that's
-                            tailored just for you.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12">
-                <h4 class="text-center">Sheet Metal Laser Cutting Machine Features</h4 class="text-center">
-            </div>
-
-            
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Cast Aluminum Beam</h5>
-                                <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:80%">
-                                <p class="card-text">Our beam is made from high-grade aluminum. This material is chosen for
-                                    its
-                                    strength. It
-                                    ensures swift and agile cutting motions. Precision is maintained.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Laser Cutting Head</h5>
-                                <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:60% ">
-                                <p class="card-text">The laser cutting head on our machine is state-of-the-art. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Hollow Steel Structure</h5>
-                                <img src="{{ asset('Frontend/assets/images/hollow.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:70%">
-                                <p class="card-text">Wireless handheld operation for ease and sensitivity. Perfectly
-                                    compatible with
-                                    the
-                                    latest CNC system software and hardware.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Wireless</h5>
-                                <img src="{{ asset('Frontend/assets/images/wireless.png') }}" alt="Sheet Metal"
-                                    class="card-img-top">
-                                <p class="card-text">CNC system is cutting-edge. Its 32-inch touch screen improve user
-                                    experience.
-                                    Dynamic
-                                    adjustments make it over 60% quicker than traditional systems.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Intelligent Operating System</h5>
-                                <img src="{{ asset('Frontend/assets/images/touch.png') }}" alt="Sheet Metal"
-                                    class="card-img-top">
-                                <p class="card-text">The electrical cabinet is designed for optimal power management. It
-                                    ensures
-                                    that power
-                                    distribution is efficient. The operation of the machine remains reliable and safe at all
-                                    times.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Chiller Unit</h5>
-                                <img src="{{ asset('Frontend/assets/images/generator.png') }}" alt="Sheet Metal"
-                                    class="card-img-top">
-                                <p class="card-text">A chiller unit is included to regulate the laser's temperature.
-                                    Consistent
-                                    performance
-                                    is maintained. It also extends the lifespan of the machine. Dependability is enhanced.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12">
-                <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                        <img src="{{ asset('Frontend/assets/images/graph.png') }}" alt="Sheet Metal" class="card-img-top"
-                            style="width:80%">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <h4> Metal Fiber Laser Cutting Machine: Key Parameters</h4>
-                        <p> Metal Fiber Laser Cutting Machine: Key Parameters</p>
+                <!-- Right Column with Text -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text mt-5" style="text-align: justify;">
+                            <li> High-precision clamping for precise cutting. <br> </li>
+                            <li>Efficient operation, quick response, and improved production efficiency. <br> </li>
+                            <li> The performance is stable and reliable, ensuring durability and reducing maintenance costs. <br> </li>
+                             <li>It has strong adaptability to various pipe materials and meets diverse cutting needs.</li>
+                        <br>
+ <br>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<br> <br> <br>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="text-center">Fiber Laser Cutting Machine Sample & Applications</h4>
-            </div>
-        </div> 
-    </div>
-
-    <br> <br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/machine/01.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
-                    <p>Laser cut carbon steel</p>
+    <h4 class="card-title text-center">High Quality Carbon Steel Plate Welding Machine Bed</h4>
+    <div class="container my-4">
+        <div class="card shadow-lg border-0">
+            <div class="row no-gutters">
+                <!-- Left Column with Image -->
+                <div class="col-md-4">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom2.png') }}" alt="CNC Laser Pipe Cutting" class="img-fluid rounded-left" style="height: 100%; width:100%;">
                 </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/machine/02.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
-                    <p>Laser cut carbon steel</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/machine/03.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
-                    <p>Laser cut brass</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/machine/04.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
-                    <p>Laser cut stainless steel</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/machine/05.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
-                    <p>Laser cutting metal</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/machine/06.png') }}" alt="Sheet Metal" class="card-img-top" style="width:100%">
-                    <p>Laser cut aluminum</p>
+                <!-- Right Column with Text -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text mt-5" style="text-align: justify;">
+                            <li> Robust stability & rigidity for high-speed and precise cutting. <br> </li>
+                            <li>Excellent corrosion & wear resistance in tough environments. <br> </li>
+                            <li> High precision & reliability for complex processing needs. <br> </li>
+                             <li>Easy maintenance with low costs and simplicity.</li>
+                        <br>
+ <br>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <h4 class="card-title text-center">Auto Focus Laser Head</h4>
+    <div class="container my-4">
+        <div class="card shadow-lg border-0">
+            <div class="row no-gutters">
+                <!-- Left Column with Image -->
+                <div class="col-md-4">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom3.png') }}" alt="CNC Laser Pipe Cutting" class="img-fluid rounded-left" style="height: 100%; width:100%;">
+                </div>
+                <!-- Right Column with Text -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text mt-5" style="text-align: justify;">
+                            <li>Adjustable Focal Length: Quickly adjusts to accommodate different power handling needs.</li>
+                            <li>Autofocus Function: Enables fast and accurate focusing.</li>
+                            <li>High-Precision Design: Achieves a focusing speed of 100 m/s with a repeatability of 1 μm.
+                            </li>
+                            <li>IP65 Dust-Proof Standard: Equipped with a patented protective mirror cover for complete dust
+                                protection without blind spots.</li>
+                            <li>Multiple Protection Mechanisms: Includes three protective lenses and a two-way optical
+                                water-cooling system.</li>
+                            <li>Corrosion & Wear Resistance: Provides durability in tough environments.</li>
+                            <li>High Precision & Reliability: Ideal for complex processing needs.</li>
+                        <br>
+ <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h4 class="card-title text-center">Intelligent Operating System</h4>
+    <div class="container my-4">
+        <div class="card shadow-lg border-0">
+            <div class="row no-gutters">
+                <!-- Left Column with Image -->
+                <div class="col-md-4">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom4.png') }}" alt="CNC Laser Pipe Cutting" class="img-fluid rounded-left" style="height: 100%; width:100%;">
+                </div>
+                <!-- Right Column with Text -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text mt-5" style="text-align: justify;">
+                            <li>Automatic Nesting Function: Automatically optimizes cutting layout for efficiency.</li>
+                            <li>Wireless Handle Control: Offers flexible and convenient operation.</li>
+                            <li>File Compatibility: Compatible with various common file formats, such as DXF, PLT, etc.</li>
+                            <li>Simple Operating System: Easy to use with fast, intuitive controls.</li>
+                            <li>Accurate Cutting Instructions: Ensures high cutting accuracy and quality.</li>
+                        </ul>
+                        <br>
+ <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
     
     
 
+
+    <div class="col-md-12">
+        <h4 class="text-center">
+            TECHNICAL PARAMETERS</h4>
+    </div>
+    <div class="col-md-12 ">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">F-BT</th>
+                    <th scope="col">  FE-BT</th>
+                    <th scope="col"> FE-BST</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Working area</th>
+                    <td>3000*1500mm / 4000*2000mm / 6000*1500mm / 6000*2500mm</td>
+                    <td> 3000*1500mm / 4000*2000mm / 6000*1500mm / 6000*2500mm</td>
+                    <td>3000*1500mm / 4000*2000mm / 6000*1500mm / 6000*2500mm</td>
+                </tr>
+                <tr>
+                    <th>Laser output power</th>
+                    <td> 1500w / 2000w / 3000w / 4000w / 6000w /12000w / 20000w</td>
+                    <td>  2000w / 3000w / 6000w / 12000w / 20000W / 30000W / 40000w / 50000w</td>
+                    <td>  2000w / 3000w / 6000w / 12000w / 20000W / 30000W / 40000w / 50000w</td>
+                </tr>
+                <tr>
+                    <th>Positioning accuracy</th>
+                    <td>0.05mm </td>
+                    <td>0.05mm </td>
+                    <td>0.05mm </td>
+                </tr>
+                <tr>
+                    <th>Repositioning accuracy</th>
+                    <td>0.03mm</td>
+                    <td>0.03mm</td>
+                    <td>0.03mm</td>
+               
+                </tr>
+                <tr>
+                    <th scope="row">Round tube cutting diameter
+                    </th>
+                    <td>20mm~230mm</td>
+                    <td>20mm~230mm</td>
+                    <td>20mm~230mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Square tube cutting diameter
+                    </th>
+                    <td >20mm~140mm</td>
+                    <td >20mm~140mm</td>
+                    <td >20mm~140mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Upgrade</th>
+                    <td Exchange platform / Fully enclosed</td>
+                    <td > 60r/min</td>
+                </tr>
+                <tr>
+                    <th scope="row">Equipment size</th>
+                    <td>Fully enclosed</td>
+                    <td>  Air Conditioner, Smoke Purifier, Air Compressor,Voltage Regulator, Safety Light Curta</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <br> <br>
+
+
+    
+    <div class="text-center">
+        <h3>Sample Display</h3>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4 position-relative text-center mb-3">
-                <img src="{{ asset('Frontend/assets/images/car.png') }}" alt="Sheet Metal" class="card-img-top w-100">
-                <h4 class="overlay-text">Automotive manufacturing</h4>
-            </div> 
-            <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/plane.png') }}" alt="Sheet Metal" class="card-img-top w-100">
-                <h4 class="overlay-text">Aerospace</h4>
+            <div class="col-md-3">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom5.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:80%">
+                    <p>Plate cutting effect</p>
+                </div>
             </div>
-            <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/ship.png') }}" alt="Sheet Metal" class="card-img-top w-100">
-                <h4 class="overlay-text">Shipbuilding industry</h4>
+            <div class="col-md-3">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom6.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:90%">
+                    <p>Plate cutting effect</p>
+                </div>
             </div>
-            <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/agriculture.png') }}" alt="Sheet Metal"
-                    class="card-img-top w-100">
-                <h4 class="overlay-text">Agricultural machinery</h4>
+            <div class="col-md-3">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom7.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:75%">
+                    <p>Pipe cutting effect</p>
+                </div>
             </div>
-            <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/architecutre.png') }}" alt="Sheet Metal"
-                    class="card-img-top w-100">
-                <h4 class="overlay-text">Achitechive</h4>
-            </div>
-            <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/rail.png') }}" alt="Sheet Metal" class="card-img-top w-100">
-                <h4 class="overlay-text">Rail transport</h4>
+            <div class="col-md-3">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/StandardCombination/standardCom8.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:70%">
+                    <p>Pipe cutting effect</p>
+                </div>
             </div>
         </div>
     </div>
-    <br> <br>
+
+    
 
 
     </body>

@@ -43,7 +43,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
                     <a href="{{ route('enclosedTube') }}">
-                        <img src="{{ asset('Frontend/assets/images/1\18.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images/EnclosedCombination\2.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Enclosed</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 50000w</h6>

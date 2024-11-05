@@ -42,9 +42,9 @@ Route::get('/products-details02', function () {
     return view('Frontend.pages.product-details2');
 })->name('products2');
 
-// Route::get('/products-details02.1', function () {
-//     return view('Frontend.pages.product-details2.1');
-// })->name('products2');
+Route::get('/products-details20', function () {
+    return view('Frontend.pages.product-details20');
+})->name('products20');
 
 Route::get('/products-details03', function () {
     return view('Frontend.pages.product-details3');
