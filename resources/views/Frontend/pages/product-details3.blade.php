@@ -17,7 +17,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
                     <a href="{{ route('HandheldLaser') }}">
-                        <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images/laserWelder03.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Handheld Laser Welding Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 1500W, 2000W</h6>
@@ -29,10 +29,10 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
-                    <a href="{{ route('HandheldMetal') }}">
+                    <a href="{{ route('LaserWelding') }}">
                         <img src="{{ asset('Frontend/assets/images/laserWelder02.jpg') }}" alt="Product Image 1">
                         <div class="card-body">
-                            <h4 class="card-title">Handheld Metal Laser Welder</h4>
+                            <h4 class="card-title">3 in 1 Laser Welding Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 20000w</h6>
                             <p class="card-text">Features :Designed for challenging, dense materials and intricate jobs. The LF-B delivers up to 20000W of power for quick and precise results — ideal for extensive, high-precision industrial demands.</p>
                             <button type="submit" class="btn btn-primary">Read More</button>
@@ -43,7 +43,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 28rem;">
                     <a href="{{ route('automaticLaser') }}">
-                        <img src="{{ asset('Frontend/assets/images/laserWelder03.jpg') }}" class="card-img-top" alt="Product Image 1">
+                        <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" class="card-img-top" alt="Product Image 1">
                         <div class="card-body">
                             <h4 class="card-title">Automatic Laser Welding Machine</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Laser Power: 2000w - 50000w</h6>

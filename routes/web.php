@@ -123,9 +123,9 @@ Route::get('/encloseTube', function () {
 Route::get('/HandheldLaser', function () {
     return view('Frontend.pages.LaserWelding.HandheldLaser');
 })->name('HandheldLaser');
-Route::get('/HandheldMetal', function () {
-    return view('Frontend.pages.LaserWelding.HandheldMetal');
-})->name('HandheldMetal');
+Route::get('/LaserWelding', function () {
+    return view('Frontend.pages.LaserWelding.LaserWeldingMachine');
+})->name('LaserWelding');
 Route::get('automaticLaser', function () {
     return view('Frontend.pages.LaserWelding.automaticLaser');
 })->name('automaticLaser');

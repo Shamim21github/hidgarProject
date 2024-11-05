@@ -16,65 +16,68 @@
         }
 
         .card {
-            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .card img {
-            width: 100%;
+        .card-img-top {
+            width: 70%;
             height: auto;
+            border-radius: 8px;
         }
 
-        .card-body {
-            padding: 1rem;
+        .image-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .image-thumbnails img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .image-thumbnails img:hover {
+            transform: scale(1.1);
         }
 
         .modal {
             display: none;
-            /* Hidden by default */
             position: fixed;
-            /* Stay in place */
             z-index: 1000;
-            /* Sit on top */
             left: 0;
             top: 0;
             width: 100%;
-            /* Full width */
             height: 100%;
-            /* Full height */
             overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
             background-color: rgba(0, 0, 0, 0.9);
-            /* Black w/ opacity */
         }
 
-        /* Modal content (image) */
         .modal-content {
             margin: auto;
             display: block;
             width: 80%;
             max-width: 700px;
-        }
-
-        /* Add animation (zoom in the image) */
-        .modal-content,
-        #caption {
-            animation-name: zoom;
-            animation-duration: 0.6s;
+            animation: zoom 0.6s;
         }
 
         @keyframes zoom {
             from {
-                transform: scale(0)
+                transform: scale(0);
             }
 
             to {
-                transform: scale(1)
+                transform: scale(1);
             }
         }
 
-        /* The close button */
         .close {
             position: absolute;
             top: 20px;
@@ -82,357 +85,314 @@
             color: #f1f1f1;
             font-size: 40px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
             cursor: pointer;
         }
 
-        .position-relative {
-            position: relative;
+        .close:hover {
+            color: #bbb;
         }
 
-        .overlay-text {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* optional: for better readability */
-            padding: 10px;
-            /* optional: for better readability */
-            border-radius: 5px;
-            /* optional: for a nicer look */
+        ul.text-dark li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
         }
 
-        .card-img-top {
-            width: 100%;
-        }
-
-
-        .scrolling-container2 {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .scrolling-card {
-            animation: scroll-left 5s linear infinite;
-        }
-
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
+        ul.text-dark li i {
+            color: #007bff;
+            /* Icon color */
+            font-size: 1.2em;
         }
     </style>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-2 ">
-                <h1 style="text-align: center;">Metal Work with 3-in-1 Laser Welding Machine</h1>
+                <h1 style="text-align: center;">
+                    Handheld Laser Welding Machine 
+                    - Built for High-quality Welding</h1>
             </div>
             <div class="col-md-12">
-                <h6 style="text-align: center;">Weld, cut, and clean with unmatched ease. Our 3 in 1 laser welder is also the
-                    most cost-effective solution available.
-                </h6>
+                <h6 style="text-align: center;">Our hand held laser welder have a cutting-edge design, delivers clean and uniform laser welding outcomes. It cuts maintenance costs and enhances work speed.</h6>
             </div> <br> <br> <br>
             <div class="col-md-6 mb-4">
-                <div class="card" style="width: 100%;">
-                    <a href="#">
-                        <img src="{{ asset('Frontend/assets/images/laserWelder01.jpg') }}" class="card-img-top enlargeable"
-                            alt="Economical Fiber Laser Cutting Machine">
+                <div class="card position-relative" style="width: 100%; text-align: center;">
+                    <a href="#" onclick="openModal('{{ asset('Frontend/assets/images/laserWelder03.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/laserWelder03.jpg') }}" class="card-img-top enlargeable"
+                            alt="Standard Power Fiber Laser Cutting Machine" style="height:400px;width:700px;">
                     </a>
+
+                    <div class="image-thumbnails">
+                        <img src="{{ asset('Frontend/assets/images/1/9.jpg') }}" alt="Thumbnail 1"
+                            onclick="openModal('{{ asset('Frontend/assets/images/1/9.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/1/10.jpg') }}" alt="Thumbnail 2"
+                            onclick="openModal('{{ asset('Frontend/assets/images/1/10.jpg') }}')">
+                        <img src="{{ asset('Frontend/assets/images/1/11.jpg') }}" alt="Thumbnail 3"
+                            onclick="openModal('{{ asset('Frontend/assets/images/1/11.jpg') }}')">
+                    </div>
                 </div>
-            </div>
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption" class="text-center"></div>
             </div>
             <div class="col-md-6 mb-4">
-                <div class="card" style="width: 28rem;">
-                    <a href="#">
+                <div class="card">
+                    <div class="card-body"> <br> <br>
+                        <h4 class="card-title text-center"> Handheld Laser Welding Machine </h4> <br>
+                        <p class="card-subtitle mb-2 text-muted">Features:  offers welding, cutting, and cleaning with ease. It's ultra-light design and double lenses cut down on maintenance costs.</p>
+
+                        <div>
+                            <ul class="text-dark">
+                                <li><i class="fas fa-check-circle"></i> Precision Cutting Made Affordable</li>
+                                <li><i class="fas fa-check-circle"></i> Ease of Use for Beginners</li>
+                                <li><i class="fas fa-check-circle"></i> Ideal for Small-Scale Metal Work</li>
+                            </ul>
+                        </div> <br>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary btn-md">
+                                <a style="color:white; text-decoration: none;" href="{{ route('contact') }}">Get a quote</a>
+                            </button>
+                        </div>
+                        <br> <br> <br> <br> <br>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption" class="text-center"></div>
+        </div>
+       
+        <div class="col-md-12">
+            <h4 class="text-center">3 in 1 Handheld Laser Welding Parameters</h4>
+        </div>
+        <div class="col-md-12 ">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Model No.</th>
+                        <th scope="col">DT-1000HJ</th>
+                        <th scope="col">DT-1500HJ</th>
+                        <th scope="col">DT-2000HJ</th>
+                        <th scope="col">DT-3000HJ</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+
+                    <tr>
+                        <th scope="row">Laser power supply</th>
+                        <td>1000W</td>
+                        <td>1500W</td>
+                        <td>2000W</td>
+                        <td>3000W</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Laser welding ability</th>
+                        <td>Carbon steel: 3mm
+                            Stainless steel: 3mm
+                            Aluminum: 1mm</td>
+                        <td>Carbon steel: 4mm
+                            Stainless steel: 4mm
+                            Aluminum: 2mm</td>
+                        <td>Carbon steel: 5mm
+                            Stainless steel: 5mm
+                            Aluminum: 3mm</td>
+                        <td>Carbon steel: 8mm
+                            Stainless steel: 8mm
+                            Aluminum: 6mm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Operating mode</th>
+                        <td colspan="4">Continuous / Modulation</td>
+                       
+                    </tr>
+                    <tr>
+                        <th scope="row">Power adjustment range</th>
+                        <td colspan="4">10%-100%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Output central wavelength</th>
+                        <td colspan="4">1070±20nm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cooling method</th>
+                        <td colspan="4">Water cooling</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Welding line requirements</th>
+                        <td colspan="4">≤0.5mm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Welding speed</th>
+                        <td colspan="4">0-120mm/s</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Upgrade</th>
+                        <td colspan="4">Smoke Purifier</td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <h4 class="card-title text-center">Advanced Laser Technology</h4>
+    <div class="container my-4">
+        <div class="card shadow-lg border-0">
+            <div class="row no-gutters">
+                <!-- Left Column with Image -->
+                <div class="col-md-4">
+                    <img src="{{ asset('Frontend/assets/images/advanced1.png') }}" alt="CNC Laser Pipe Cutting" class="img-fluid rounded-left" style="height: 100%; width:100%;">
+                </div>
+                <!-- Right Column with Text -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text mt-4" style="text-align: justify;"> <br> <br>   <br> 
+                            User-friendly and efficient, achieving faster and more precise results than TIG welding!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="card-title text-center">Adjustable Welding Parameters</h4>
+    <div class="container my-4">
+        <div class="card shadow-lg border-0">
+            <div class="row no-gutters">
+                <!-- Left Column with Image -->
+                <div class="col-md-4">
+                    <img src="{{ asset('Frontend/assets/images/adjust1.png') }}" alt="CNC Laser Pipe Cutting" class="img-fluid rounded-left" style="height: 100%; width:100%;">
+                </div>
+                <!-- Right Column with Text -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text mt-4" style="text-align: justify;"> <br> <br> 
+                            Adjust welding parameters with ease, and switch between six welding modes at will!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        <div class="col-md-12">
+            <h4 class="text-center">Sheet Metal Laser Cutting Machine Features</h4 class="text-center">
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">3 in 1 Handheld Metal Laser Welder- Revolutionary Multi-functional Device
-                            </h4>
-                            <p class="card-text" style="text-align: left">Features: <br> Offering laser welding, cutting,
-                                and cleaning capabilities. This machine cuts costs and expands metal processing options.</p>
-                            <h6 class="card-subtitle mb-2 text-muted"style="text-align: left">Laser Power: 1500W, 2000W</h6>
-                            <div>
-                                <ul class="text-dark" style="text-align: left">
-                                    <li>High-precision clamping for precise cutting.</li>
-                                    <li>Efficient operation, quick response, and improved production efficiency.</li>
-
-                                </ul>
-                            </div>
-
-                            <div>
-
-
-                            </div> <br> <br> <br>
-
-                            {{-- <button type="submit" class="btn btn-primary">Order Now</button> --}}
-                        </div>
-                    </a>
-                </div>
-            </div> <br>
-            <div class="col-md-12">
-                <h4 class="text-center">3 in 1 Handheld Laser Welding Parameters</h4>
-            </div>
-            <div class="col-md-12 ">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="row" style="font-weight: bold;text-align:center">Model No.</th>
-                            <td colspan="4" style="font-weight: bold;text-align:center">Handheld Laser Welding Cleaning
-                                Cutting Machine</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" style="text-align:center">Laser power supply</th>
-                            <td colspan="4" style="text-align:center">1000W, 1500W, 2000W, 3000W</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center">Power Adjustment Range</th>
-                            <td colspan="4" style="text-align:center">10%-100%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center">Output central wavelength</th>
-                            <td colspan="4" style="text-align:center">1070±20nm</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center">Cooling method</th>
-                            <td colspan="4" style="text-align:center">Water cooling</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center">Welding line requirements </th>
-                            <td colspan="4" style="text-align:center">≤0.5mm</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center">Welding speed</th>
-                            <td colspan="4" style="text-align:center">0-120mm/s</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center">Upgrade</th>
-                            <td colspan="4" style="text-align:center">Smoke Purifier</td>
-
-                        </tr>
-
-
-                    </tbody>
-                </table>
-            </div>
-
-
-
-            <div class="col-md-12 d-flex justify-content-between mt-4">
-                <div class="product-item text-center mb-4" style="width: 32%;">
-                    <div class="product-img"
-                        style="height: 200px; display: flex; justify-content: center; align-items: center;">
-                        <img src="{{ asset('Frontend/assets/images/product4.png') }}" alt="Laser Welding Gun"
-                            class="img-fluid" style="max-height: 100%; max-width: 100%;">
-                    </div>
-                    <h4 class="mt-3">Laser Welding Gun</h4>
-                    <p>The high-intensity laser beam in this feature is designed for metal welding. It offers precise and
-                        rapid laser welds, offering strong, quality joins in metal materials.</p>
-                </div>
-
-                <div class="product-item text-center mb-4" style="width: 32%;">
-                    <div class="product-img"
-                        style="height: 200px; display: flex; justify-content: center; align-items: center;">
-                        <img src="{{ asset('Frontend/assets/images/product4.1.png') }}" alt="Laser Welding Gun"
-                            class="img-fluid" style="max-height: 100%; max-width: 100%;">
-                    </div>
-                    <h4 class="mt-3">Laser Welding Gun</h4>
-                    <p>The high-intensity laser beam in this feature is designed for metal welding. It offers precise and
-                        rapid laser welds, offering strong, quality joins in metal materials.</p>
-                </div>
-
-                <div class="product-item text-center mb-4" style="width: 32%;">
-                    <div class="product-img"
-                        style="height: 200px; display: flex; justify-content: center; align-items: center;">
-                        <img src="{{ asset('Frontend/assets/images/product4.2.png') }}" alt="Laser Welding Gun"
-                            class="img-fluid" style="max-height: 100%; max-width: 100%;">
-                    </div>
-                    <h4 class="mt-3">Laser Welding Gun</h4>
-                    <p>The high-intensity laser beam in this feature is designed for metal welding. It offers precise and
-                        rapid laser welds, offering strong, quality joins in metal materials.</p>
-                </div>
-            </div>
-
-            <div class="col-md-12 d-flex justify-content-between mt-4">
-                <div class="product-item text-center mb-4" style="width: 32%;">
-                    <div class="product-img"
-                        style="height: 200px; display: flex; justify-content: center; align-items: center;">
-                        <img src="{{ asset('Frontend/assets/images/product5.png') }}" alt="Laser Welding Gun"
-                            class="img-fluid" style="max-height: 100%; max-width: 100%;">
-                    </div>
-                    <h4 class="mt-3">Durable and Ultra-Light</h4>
-                    <p>At only 700g, this laser head is much lighter than usual. With dual protective lenses, It's designed
-                        to prevent the common issue of lens damage seen in traditional welders.</p>
-                </div>
-
-                <div class="product-item text-center mb-4" style="width: 32%;">
-                    <div class="product-img"
-                        style="height: 200px; display: flex; justify-content: center; align-items: center;">
-                        <img src="{{ asset('Frontend/assets/images/product5.1.png') }}" alt="Laser Welding Gun"
-                            class="img-fluid" style="max-height: 100%; max-width: 100%;">
-                    </div>
-                    <h4 class="mt-3">High-quality materials</h4>
-                    <p>High-quality stainless steel is what we use to build the entire machine. It guarantees lasting
-                        stability and lowers the need for maintenance.</p>
-                </div>
-
-                <div class="product-item text-center mb-4" style="width: 32%;">
-                    <div class="product-img"
-                        style="height: 200px; display: flex; justify-content: center; align-items: center;">
-                        <img src="{{ asset('Frontend/assets/images/product5.2.png') }}" alt="Laser Welding Gun"
-                            class="img-fluid" style="max-height: 90%; max-width: 50%;">
-                    </div>
-                    <h4 class="mt-3">Cost Savings</h4>
-                    <p>The upfront cost may be more, but it's outweighed by the long-term benefits. You avoid the expense of
-                        multiple units, making the investment financially sound.</p>
-                </div>
-            </div>
-
-
-
-            <div class="col-md-12">
-                <h4 class="text-center">Handheld Laser Welding Manner</h4 class="text-center">
-            </div>
-
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product6.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:60%">
-                                <h5 class="card-title">Tee Weld</h5>
-                            </div>
+                            <h5 class="card-title">Cast Aluminum Beam</h5>
+                            <img src="{{ asset('Frontend/assets/images/beam.png') }}" alt="Sheet Metal"
+                                class="card-img-top" style="width:80%">
+                            <p class="card-text">Our beam is made from high-grade aluminum. This material is chosen for
+                                its
+                                strength. It
+                                ensures swift and agile cutting motions. Precision is maintained.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product6.1.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:70% ">
-                                <h5 class="card-title">Fillet Weld</h5>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Laser Cutting Head</h5>
+                            <img src="{{ asset('Frontend/assets/images/head.png') }}" alt="Sheet Metal"
+                                class="card-img-top" style="width:60% ">
+                            <p class="card-text">The laser cutting head on our machine is state-of-the-art. </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product6.2.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:70%">
-                                <h5 class="card-title">Spot Weld</h5>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hollow Steel Structure</h5>
+                            <img src="{{ asset('Frontend/assets/images/hollow.png') }}" alt="Sheet Metal"
+                                class="card-img-top" style="width:70%">
+                            <p class="card-text">Wireless handheld operation for ease and sensitivity. Perfectly
+                                compatible with
+                                the
+                                latest CNC system software and hardware.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product6.3.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:70%">
-                                <h5 class="card-title">Surfacing Weld</h5>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless</h5>
+                            <img src="{{ asset('Frontend/assets/images/wireless.png') }}" alt="Sheet Metal"
+                                class="card-img-top">
+                            <p class="card-text">CNC system is cutting-edge. Its 32-inch touch screen improve user
+                                experience.
+                                Dynamic
+                                adjustments make it over 60% quicker than traditional systems.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product6.4.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:70%">
-                                <h5 class="card-title">Groove Weld</h5>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Intelligent Operating System</h5>
+                            <img src="{{ asset('Frontend/assets/images/touch.png') }}" alt="Sheet Metal"
+                                class="card-img-top">
+                            <p class="card-text">The electrical cabinet is designed for optimal power management. It
+                                ensures
+                                that power
+                                distribution is efficient. The operation of the machine remains reliable and safe at all
+                                times.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chiller Unit</h5>
+                            <img src="{{ asset('Frontend/assets/images/generator.png') }}" alt="Sheet Metal"
+                                class="card-img-top">
+                            <p class="card-text">A chiller unit is included to regulate the laser's temperature.
+                                Consistent
+                                performance
+                                is maintained. It also extends the lifespan of the machine. Dependability is enhanced.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-12 mt-5">
-            <h4 class="text-center">Laser Welder Cutter Cleaner Metal</h4 class="text-center">
-        </div>
-
-        <div class="scrolling-container2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 scrolling-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product7.2.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:70%">
-                                <h5 class="card-title">Laser welding Stainless steel</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 scrolling-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product7.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:80%">
-                                <h5 class="card-title">Laser rust removal</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 scrolling-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product7.6.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:75%">
-                                <h5 class="card-title">Laser welding Carbon steel</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 scrolling-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product7.4.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:75%">
-                                <h5 class="card-title">Laser cleaning metal</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 scrolling-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product7.1.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:60%">
-                                <h5 class="card-title">Laser cutting aluminum</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 scrolling-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ asset('Frontend/assets/images/product7.3.png') }}" alt="Sheet Metal"
-                                    class="card-img-top" style="width:60%">
-                                <h5 class="card-title">Laser cutting copper</h5>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="col-md-12">
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img src="{{ asset('Frontend/assets/images/graph.png') }}" alt="Sheet Metal" class="card-img-top"
+                        style="width:80%">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h4> Metal Fiber Laser Cutting Machine: Key Parameters</h4>
+                    <p> Metal Fiber Laser Cutting Machine: Key Parameters</p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <br> <br> <br>
@@ -440,31 +400,92 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Fiber Laser Cutting Machine Sample & Applications</h4>
+            </div>
+        </div>
+    </div>
+
+    <br> <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/01.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:100%">
+                    <p>Laser cut carbon steel</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/02.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:100%">
+                    <p>Laser cut carbon steel</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/03.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:100%">
+                    <p>Laser cut brass</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/04.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:100%">
+                    <p>Laser cut stainless steel</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/05.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:100%">
+                    <p>Laser cutting metal</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
+                    <img src="{{ asset('Frontend/assets/images/machine/06.png') }}" alt="Sheet Metal"
+                        class="card-img-top" style="width:100%">
+                    <p>Laser cut aluminum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br> <br>
+
+    <div class="container">
+        <div class="row">
             <div class="col-md-4 position-relative text-center mb-3">
-                <img src="{{ asset('Frontend/assets/images/car2.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <img src="{{ asset('Frontend/assets/images/car.png') }}" alt="Sheet Metal" class="card-img-top w-100">
                 <h4 class="overlay-text">Automotive manufacturing</h4>
             </div>
             <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/plane2.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <img src="{{ asset('Frontend/assets/images/plane.png') }}" alt="Sheet Metal" class="card-img-top w-100">
                 <h4 class="overlay-text">Aerospace</h4>
             </div>
             <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/ship2.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <img src="{{ asset('Frontend/assets/images/ship.png') }}" alt="Sheet Metal" class="card-img-top w-100">
                 <h4 class="overlay-text">Shipbuilding industry</h4>
             </div>
             <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/construction2.png') }}" alt="Sheet Metal"
+                <img src="{{ asset('Frontend/assets/images/agriculture.png') }}" alt="Sheet Metal"
                     class="card-img-top w-100">
-                <h4 class="overlay-text">Construction Industry</h4>
+                <h4 class="overlay-text">Agricultural machinery</h4>
             </div>
             <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/industry2.png') }}" alt="Sheet Metal"
+                <img src="{{ asset('Frontend/assets/images/architecutre.png') }}" alt="Sheet Metal"
                     class="card-img-top w-100">
-                <h4 class="overlay-text">Medical Device Industry</h4>
+                <h4 class="overlay-text">Achitechive</h4>
             </div>
             <div class="col-md-4 position-relative text-center">
-                <img src="{{ asset('Frontend/assets/images/metal2.png') }}" alt="Sheet Metal" class="card-img-top w-100">
-                <h4 class="overlay-text">Metal Fabrication</h4>
+                <img src="{{ asset('Frontend/assets/images/rail.png') }}" alt="Sheet Metal" class="card-img-top w-100">
+                <h4 class="overlay-text">Rail transport</h4>
             </div>
         </div>
     </div>
