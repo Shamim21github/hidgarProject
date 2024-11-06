@@ -531,7 +531,8 @@ img {
   z-index: 1;
 }
 .wpo-breadcumb-area2 {
-  background: url(../images/factoryimages.png) no-repeat center top/cover;
+  background: url(../images/factory2.jpg) no-repeat center top/cover;
+  /* background: url(../images/factoryimages.png) no-repeat center top/cover; */
   min-height: 400px;
   position: relative;
   display: flex;

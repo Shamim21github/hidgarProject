@@ -39,26 +39,85 @@
         /* Ensure the enlarged image appears above other elements */
         position: relative;
     }
+
+   /* Full-screen overlay for the welcome screen */
+/* Full-screen overlay for the welcome screen with animated gradient background */
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #000B47, #ff6b6b, #01B0FF, #4ecdc4, #556270);
+    background-size: 400% 400%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease, transform 1s ease;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Welcome message styling */
+.welcome-message h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', 'Roboto Slab';
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    animation: fadeInText 1.5s ease forwards;
+}
+
+/* Fade-in text effect */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-out effect for the welcome screen */
+.hide-welcome-screen {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
 </style>
 
 
 <body>
 
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-message">
+            <h1>Welcome to the Hidgar Website</h1>
+        </div>
+    </div>
+
+
     <!-- start page-wrapper -->
     <div class="page-wrapper">
-        <!-- start preloader -->
-        {{-- <div class="preloader">
-            <div class="vertical-centered-box">
-                <div class="content">
-                    <div class="loader-circle"></div>
-                    <div class="loader-line-mask">
-                        <div class="loader-line"></div>
-                    </div>
-                    <img src="{{ asset ('Frontend/assets/images/preloader.png') }}" alt="">
-                </div>
-            </div>
-        </div> --}}
-        <!-- end preloader -->
 
         <!-- Start header -->
         <header id="header">
@@ -124,39 +183,7 @@
                                             <a class="" href="#">Home</a>
                                         </li>
                                         <li><a href="{{ route('about') }}">About</a></li>
-                                        {{-- <li class="menu-item-has-children">
-                                            <a href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-single.html">Shop Single</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="team-single.html">Team Single</a></li>
-                                                <li><a href="404.html">404 Error</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </li> --}}
-                                        {{-- <li class="menu-item-has-children ">
-                                            <a href="{{ route('products') }}">Products</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="{{ route('products1') }}">Fiber Laser Machine for Metal
-                                                        Sheet Cutting </a>
-                                                </li>
-                                                <li><a href="{{ route('products2') }}"> Fiber Laser Machine for Metal
-                                                        Tube Cutting
-                                                    </a></li>
-                                                <li><a href="{{ route('products2') }}"> Combined Fiber Laser for Metal
-                                                        Sheet & Tube Cutting
-                                                    </a></li>
-                                                <li><a href="{{ route('products3') }}">Laser Welding Equipment </a>
-                                                </li>
-                                                
-                                                <li><a href="{{ route('products6') }}">Laser Cleaning Equipment </a>
-                                                </li>
-                                            </ul>
-                                        </li> --}}
+                                
 
                                         <li class="menu-item-has-children">
                                             <a href="{{ route('products') }}">Products</a>
@@ -175,35 +202,35 @@
                                                 <li class="menu-item-has-children">
                                                     <a href="{{ route('products2') }}">Fiber Laser Machine for Metal Tube Cutting</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="#">Mini Tube Cutting Machine</a></li>
-                                                        <li><a href="#">Standard Tube Cutting Machine</a></li>
-                                                        <li><a href="#">Three Chuck  Tube Cutting Machine</a></li>
-                                                        <li><a href="#">Auto Loading  Tube Cutting Machine</a></li>
-                                                        <li><a href="#">Suspension  Tube Cutting Machine</a></li>
+                                                        <li><a href="{{ route('miniTube') }}">Mini Tube Cutting Machine</a></li>
+                                                        <li><a href="{{ route('standardTubeCutting') }}">Standard Tube Cutting Machine</a></li>
+                                                        <li><a href="{{ route('threeChuckTube') }}">Three Chuck  Tube Cutting Machine</a></li>
+                                                        <li><a href="{{ route('autoLoadingTube') }}">Auto Loading  Tube Cutting Machine</a></li>
+                                                        <li><a href="{{ route('suspensionTube') }}">Suspension  Tube Cutting Machine</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
                                                     <a href="{{ route('products20') }}">Combined Fiber Laser for Metal Sheet & Tube Cutting</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="#">Standard </a></li>
-                                                        <li><a href="#">Exchange Table </a></li>
-                                                        <li><a href="#">Enclosed  </a></li>
+                                                        <li><a href="{{ route('standardTube') }}">Standard </a></li>
+                                                        <li><a href="{{ route('exchangeTube') }}">Exchange Table </a></li>
+                                                        <li><a href="{{ route('enclosedTube') }}">Enclosed  </a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
                                                     <a href="{{ route('products3') }}">Laser Welding Equipment</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="#">Handheld</a></li>
-                                                        <li><a href="#">3 in 1</a></li>
-                                                        <li><a href="#">HJR Robotic</a></li>
+                                                        <li><a href="{{ route('HandheldLaser') }}">Handheld</a></li>
+                                                        <li><a href="{{ route('LaserWelding') }}">3 in 1</a></li>
+                                                        <li><a href="{{ route('automaticLaser') }}">HJR Robotic</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
                                                     <a href="{{ route('products6') }}">Laser Cleaning Equipment</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="#">Handheld</a></li>
-                                                        <li><a href="#">Pulshed</a></li>
-                                                        <li><a href="#">Backpack</a></li>
+                                                        <li><a href="{{ route('HandheldLaserMetal') }}">Handheld</a></li>
+                                                        <li><a href="{{ route('suitcaseMetal') }}">Pulshed</a></li>
+                                                        <li><a href={{ route('backpackPulse') }}">Backpack</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -225,31 +252,7 @@
                                                         Accessories</a></li>
                                             </ul>
                                         </li>
-                                        {{-- <li class="menu-item-has-children">
-                                            <a href="{{ route('projects') }}">Project</a>
-                                        </li> --}}
-                                        {{-- <li class="menu-item-has-children">
-                                            <a href="{{ route('team') }}">Team</a>
-                                        </li> --}}
-                                        {{-- <li class="menu-item-has-children">
-                                            <a href="{{ route('blog') }}">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog right sidebar</a></li>
-                                                <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                                                <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Blog details</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="blog-single.html">Blog details right sidebar</a>
-                                                        </li>
-                                                        <li><a href="blog-single-left-sidebar.html">Blog details left
-                                                                sidebar</a></li>
-                                                        <li><a href="blog-single-fullwidth.html">Blog details
-                                                                fullwidth</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> --}}
+                                        
                                         <li><a href="{{ route('contact') }}">Contact</a></li>
                                     </ul>
 
@@ -257,47 +260,7 @@
                             </div>
                             <div class="col-lg-3 col-md-2 col-2">
                                 <div class="header-right">
-                                    {{-- <div class="mini-cart">
-                                        <button class="cart-toggle-btn"> <i class="fi flaticon-shopping-cart"></i>
-                                            <span class="cart-count">2</span>
-                                        </button>
-                                        <div class="mini-cart-content">
-                                            <button class="mini-cart-close"><i class="ti-close"></i></button>
-                                            <div class="mini-cart-items">
-                                                <div class="mini-cart-item clearfix">
-                                                    <div class="mini-cart-item-image">
-                                                        <a href="shop.html"><img
-                                                                src="assets/images/shop/mini-cart/img-1.jpg" alt></a>
-                                                    </div>
-                                                    <div class="mini-cart-item-des">
-                                                        <a href="shop.html">Bev Accent Chair</a>
-                                                        <span class="mini-cart-item-price">$20.15 x 1</span>
-                                                        <span class="mini-cart-item-quantity"><a href="#"><i
-                                                                    class="ti-close"></i></a></span>
-                                                    </div>
-                                                </div>
-                                                <div class="mini-cart-item clearfix">
-                                                    <div class="mini-cart-item-image">
-                                                        <a href="shop.html"><img
-                                                                src="assets/images/shop/mini-cart/img-2.jpg" alt></a>
-                                                    </div>
-                                                    <div class="mini-cart-item-des">
-                                                        <a href="shop.html">Black Timber Chairs</a>
-                                                        <span class="mini-cart-item-price">$13.25 x 2</span>
-                                                        <span class="mini-cart-item-quantity"><a href="#"><i
-                                                                    class="ti-close"></i></a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mini-cart-action clearfix">
-                                                <span class="mini-checkout-price">Subtotal: <span>$215.14</span></span>
-                                                <div class="mini-btn">
-                                                    <a href="checkout.html" class="view-cart-btn s1">Checkout</a>
-                                                    <a href="cart.html" class="view-cart-btn">View Cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
+                                   
                                     <div class="header-search-form-wrapper">
                                         <div class="cart-search-contact">
                                             <button class="search-toggle-btn"><i class="fi flaticon-loupe"></i>
@@ -330,28 +293,6 @@
         <section class="wpo-hero-slider wpo-hero-slider-s2">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    {{-- <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image"
-                            data-background="{{ asset('Frontend/assets/images/slider/slide-17.jpg') }}">
-                            <!-- <div class="gradient-overlay"></div> -->
-                            <div class="container-fluid">
-                                <div class="slide-content">
-                                    <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>Metal Working Machines</h2>
-                                    </div>
-                                    <div data-swiper-parallax="400" class="slide-text">
-                                        <p></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div data-swiper-parallax="500" class="slide-btns">
-                                        <a href="{{ route('about') }}" class="theme-btn">About Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>  --}}
-
-
                     <div class="swiper-slide">
                         <div class="slide-inner slide-bg-image"
                             data-background="{{ asset('Frontend/assets/images/slider/slide-14.jpg') }}">
@@ -418,18 +359,7 @@
         <section class="wpo-about-section-s2 section-padding">
             <div class="container">
                 <div class="row">
-                    {{-- <div class="col-lg-6 col-12">
-                        <div class="about-left-image">
-                            <div class="ab-3">
-                                <img src="{{ asset ('Frontend/assets/images/ab-7.jpg') }}" alt="">
-                            </div>
-                            <div class="ab-4">
-                                <img src="{{ asset ('Frontend/assets/images/ab-6.jpg') }}" alt="">
-                            </div>
-                        </div>
-                    </div> --}}
-
-
+                
                     <div class="col-lg-6 col-12">
                         <div class="">
                             <div class="ab-3" style="width:1000px!important">
@@ -443,7 +373,7 @@
                         <div class="content">
                             <div class="text">
                                 <h2>About Us</h2>
-                                {{-- <h3>We Are Solving All of Your Business Problem</h3> --}}
+                               
                                 <p>
                                     Hidgar is a global business dedicated to the development, manufacturing, and
                                     distribution of laser cutting equipment.Our commitment is in creating and producing
@@ -451,19 +381,6 @@
                                     continued to develop at a rapid pace.
                                 </p>
                             </div>
-                            {{-- <div class="list">
-                                <ul>
-                                    <li><i class="ti-check"></i> <span>Raw Materials</span></li>
-                                    <li><i class="ti-check"></i> <span>Quality Control</span></li>
-                                    <li><i class="ti-check"></i> <span>Finished Goods</span></li>
-                                </ul>
-                                <ul>
-                                    <li><i class="ti-check"></i> <span>Raw Materials</span></li>
-                                    <li><i class="ti-check"></i> <span>Quality Control</span></li>
-                                    <li><i class="ti-check"></i> <span>Finished Goods</span></li>
-                                </ul>
-
-                            </div> --}}
                             <div class="about-btn">
                                 <a href="{{ route('about') }}" class="theme-btn">About Us</a>
                             </div>
@@ -919,6 +836,26 @@
             });
         });
     </script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const welcomeScreen = document.getElementById("welcomeScreen");
+    const mainContent = document.getElementById("mainContent");
+
+    // Set a delay for the welcome message fade-in and slide-out
+    setTimeout(function() {
+        // Add the slide-out class to hide the welcome screen with animation
+        welcomeScreen.classList.add("hide-welcome-screen");
+
+        // Wait until the animation is complete, then show the main content
+        setTimeout(function() {
+            welcomeScreen.style.display = "none";
+            mainContent.style.display = "block";
+        }, 800); // Adjust based on the transition duration
+    }, 1000); // Adjust this delay for how long the welcome message displays
+});
+
+</script>
 
 </body>
 

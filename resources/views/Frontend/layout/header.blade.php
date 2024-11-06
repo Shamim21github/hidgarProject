@@ -115,6 +115,7 @@
                                 <li><a href="{{ route('about') }}">About</a></li>
                             
 
+                              
                                 <li class="menu-item-has-children">
                                     <a href="{{ route('products') }}">Products</a>
                                     <ul class="sub-menu">
@@ -132,35 +133,35 @@
                                         <li class="menu-item-has-children">
                                             <a href="{{ route('products2') }}">Fiber Laser Machine for Metal Tube Cutting</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Mini Tube Cutting Machine</a></li>
-                                                <li><a href="#">Standard Tube Cutting Machine</a></li>
-                                                <li><a href="#">Three Chuck  Tube Cutting Machine</a></li>
-                                                <li><a href="#">Auto Loading  Tube Cutting Machine</a></li>
-                                                <li><a href="#">Suspension  Tube Cutting Machine</a></li>
+                                                <li><a href="{{ route('miniTube') }}">Mini Tube Cutting Machine</a></li>
+                                                <li><a href="{{ route('standardTubeCutting') }}">Standard Tube Cutting Machine</a></li>
+                                                <li><a href="{{ route('threeChuckTube') }}">Three Chuck  Tube Cutting Machine</a></li>
+                                                <li><a href="{{ route('autoLoadingTube') }}">Auto Loading  Tube Cutting Machine</a></li>
+                                                <li><a href="{{ route('suspensionTube') }}">Suspension  Tube Cutting Machine</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="{{ route('products2') }}">Combined Fiber Laser for Metal Sheet & Tube Cutting</a>
+                                            <a href="{{ route('products20') }}">Combined Fiber Laser for Metal Sheet & Tube Cutting</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Standard </a></li>
-                                                <li><a href="#">Exchange Table </a></li>
-                                                <li><a href="#">Enclosed  </a></li>
+                                                <li><a href="{{ route('standardTube') }}">Standard </a></li>
+                                                <li><a href="{{ route('exchangeTube') }}">Exchange Table </a></li>
+                                                <li><a href="{{ route('enclosedTube') }}">Enclosed  </a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="{{ route('products3') }}">Laser Welding Equipment</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Handheld</a></li>
-                                                <li><a href="#">3 in 1</a></li>
-                                                <li><a href="#">HJR Robotic</a></li>
+                                                <li><a href="{{ route('HandheldLaser') }}">Handheld</a></li>
+                                                <li><a href="{{ route('LaserWelding') }}">3 in 1</a></li>
+                                                <li><a href="{{ route('automaticLaser') }}">HJR Robotic</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="{{ route('products6') }}">Laser Cleaning Equipment</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Handheld</a></li>
-                                                <li><a href="#">Pulshed</a></li>
-                                                <li><a href="#">Backpack</a></li>
+                                                <li><a href="{{ route('HandheldLaserMetal') }}">Handheld</a></li>
+                                                <li><a href="{{ route('suitcaseMetal') }}">Pulshed</a></li>
+                                                <li><a href={{ route('backpackPulse') }}">Backpack</a></li>
                                             </ul>
                                         </li>
                                     </ul>

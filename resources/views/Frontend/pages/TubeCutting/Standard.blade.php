@@ -296,46 +296,52 @@
 
 
     
-    <div class="container">
+    <div class="container mt-3 mb-3">
         <div class="row">
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/mini/mini9.png') }}" alt="Sheet Metal"
-                        class="card-img-top" style="width:80%">
-                    <p>Stainless Steel Tube</p>
+            <div class="col-md-12">
+                <div class="card p-3">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-md-2 text-center">
+                            <div class="image-box" style="border: 1px solid #ddd; padding: 10px;">
+                                <img src="{{ asset('Frontend/assets/images/mini/mini9.png') }}" alt="Stainless Steel Tube"
+                                    class="card-img-top" style="width: 80%;">
+                                <p>Stainless Steel Tube</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="image-box" style="border: 1px solid #ddd; padding: 10px;">
+                                <img src="{{ asset('Frontend/assets/images/mini/mini10.png') }}" alt="Carbon Steel Pipe"
+                                    class="card-img-top" style="width: 90%;">
+                                <p>Carbon Steel Pipe</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="image-box" style="border: 1px solid #ddd; padding: 10px;">
+                                <img src="{{ asset('Frontend/assets/images/mini/mini11.png') }}" alt="Aluminum Tube"
+                                    class="card-img-top" style="width: 45%;">
+                                <p>Aluminum Tube</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="image-box" style="border: 1px solid #ddd; padding: 10px;">
+                                <img src="{{ asset('Frontend/assets/images/mini/mini12.png') }}" alt="Carbon Steel Pipe"
+                                    class="card-img-top" style="width: 70%;">
+                                <p>Carbon Steel Pipe</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="image-box" style="border: 1px solid #ddd; padding: 10px;">
+                                <img src="{{ asset('Frontend/assets/images/mini/mini13.png') }}" alt="Carbon Steel Square Tube"
+                                    class="card-img-top" style="width: 60%;">
+                                <p>Carbon Steel Square Tube</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/mini/mini10.png') }}" alt="Sheet Metal"
-                        class="card-img-top" style="width:90%">
-                    <p>Carbon Steel Pipe</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/mini/mini11.png') }}" alt="Sheet Metal"
-                        class="card-img-top" style="width:45%">
-                    <p>Aluminum Tube</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/mini/mini12.png') }}" alt="Sheet Metal"
-                        class="card-img-top" style="width:70%">
-                    <p>Carbon Steel Pipe</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="image-box" style="border: 1px solid #ddd; padding: 10px; text-align: center;">
-                    <img src="{{ asset('Frontend/assets/images/mini/mini13.png') }}" alt="Sheet Metal"
-                        class="card-img-top" style="width:60%">
-                    <p>Carbon Steel Square Tube</p>
-                </div>
-            </div>
-        
         </div>
     </div>
+    
 
 
     </body>
